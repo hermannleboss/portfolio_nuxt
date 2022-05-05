@@ -2,6 +2,7 @@
   <div>
     <NavBar/>
     <HeaderHero/>
+    <AboutMeComponent/>
   </div>
 </template>
 
