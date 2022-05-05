@@ -1,9 +1,11 @@
 <template>
-  <div class='hero container-fluid'>
-    <img src='~/static/images/homepage/desktop/image-homepage-hero.jpg' alt='image' class='img-full'>
-    <div>
-      <h1>Hey, I’m Hermann EHO and I love building beautiful websites</h1>
-      <ButtonItem/>
+  <div class=' container-fluid'>
+    <div class='hero'>
+      <img src='~/static/images/homepage/desktop/image-homepage-hero.jpg' alt='image' class='img-full'>
+      <div class='hero-text'>
+        <h1 class='pb-4'>Hey, I’m  EHO Hermann and I love building beautiful websites</h1>
+        <ButtonItem/>
+      </div>
     </div>
   </div>
 </template>
@@ -26,9 +28,18 @@ $color-light-gray:  #EAEAEB;
 $color-red:  #F43030;
 
 .hero {
+  position: relative;
   min-height: 600px;
-  display: flex;
   flex-direction: column;
+  &-text{
+    background-color: $color-light;
+    width: 445px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-top: 55px;
+    padding-right: 55px;
+  }
 }
 .img-full{
   width: 100%;
