@@ -1,12 +1,18 @@
 <template>
-  <div class='hero'>
-    ds
+  <div class='hero container-fluid'>
+    <img src='~/static/images/homepage/desktop/image-homepage-hero.jpg' alt='image' class='img-full'>
+    <div>
+      <h1>Hey, I’m Hermann EHO and I love building beautiful websites</h1>
+      <ButtonItem/>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HeaderHero'
+  name: 'HeaderHero',
+  components: {}
+
 }
 </script>
 
@@ -20,7 +26,11 @@ $color-light-gray:  #EAEAEB;
 $color-red:  #F43030;
 
 .hero {
-  height: 600px;
-  background-color: $color-dark;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+}
+.img-full{
+  width: 100%;
 }
 </style>

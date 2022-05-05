@@ -70,4 +70,7 @@ a{
 
   color: $color-primary;
 }
+.container-fluid{
+  padding: 0px 165px;
+}
 </style>
