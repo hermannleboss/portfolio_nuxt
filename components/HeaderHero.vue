@@ -1,5 +1,5 @@
 <template>
-  <div class=' container-fluid'>
+  <div class='container-fluid'>
     <div class='hero'>
       <img src='~/static/images/homepage/desktop/image-homepage-hero.jpg' alt='image' class='img-full'>
       <div class='hero-text'>
@@ -14,7 +14,6 @@
 export default {
   name: 'HeaderHero',
   components: {}
-
 }
 </script>
 
@@ -30,7 +29,6 @@ $color-red:  #F43030;
 .hero {
   position: relative;
   min-height: 600px;
-  flex-direction: column;
   &-text{
     background-color: $color-light;
     width: 445px;

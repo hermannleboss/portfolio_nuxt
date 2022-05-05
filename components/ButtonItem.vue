@@ -1,6 +1,6 @@
 <template>
-  <b-button squared variant="primary">
-    <div class='btn-icon'>
+  <b-button squared variant="primary" class='d-flex  align-items-center'>
+    <div class='btn-icon d-flex align-items-center justify-content-center'>
       <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M1 9L9 13L17 9" stroke="#FFF"/>
         <path opacity="0.5" d="M1 5L9 9L17 5" stroke="#FFF"/>
@@ -31,8 +31,6 @@ $color-red:  #F43030;
 
 .btn{
   height: 48px;
-  display: flex;
-  align-items: center;
   padding: 0;
   &-primary{
      background-color: $color-secondary;
@@ -41,9 +39,6 @@ $color-red:  #F43030;
     width: 48px;
     height: 48px;
     color: $color-primary ;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
   &-text{
     padding: 17px;
