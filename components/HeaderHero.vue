@@ -25,16 +25,18 @@ $color-dark:  #33323D;
 $color-light:  #FAFAFA;
 $color-light-gray:  #EAEAEB;
 $color-red:  #F43030;
+$color-white: #FFFFFF;
 
 .hero {
   position: relative;
   min-height: 600px;
   &-text{
-    background-color: $color-light;
+    background-color: $color-white;
     width: 445px;
     position: absolute;
     bottom: 0;
     left: 0;
+    border: white 100px;
     padding-top: 55px;
     padding-right: 55px;
   }
