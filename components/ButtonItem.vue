@@ -1,6 +1,8 @@
 <template>
-  <b-button squared variant='primary' class='d-flex align-items-center'>
-    <div class='btn-icon d-flex align-items-center justify-content-center'>
+  <b-button squared :variant='variant' class='d-flex align-items-center'>
+    <div
+      v-if='variant==="primary"'
+      class='btn-icon d-flex align-items-center justify-content-center'>
       <svg
         width='18'
         height='14'
@@ -22,27 +24,43 @@
 <script>
 export default {
   name:         'ButtonItem',
-  inheritAttrs: false
+  inheritAttrs: false,
+  props:        {
+    variant: {
+      type:    [String],
+      default: 'primary'
+    }
+  }
 }
 </script>
 
 <style scoped lang='scss'>
-$color-primary: #5fb4a2;
-$color-secondary: #203a4c;
-$color-dark: #33323d;
-$color-light: #fafafa;
-$color-light-gray: #eaeaeb;
-$color-red: #f43030;
-
 .btn {
   height: 48px;
   padding: 0;
 
   &-primary {
     background-color: $color-secondary;
+    border: none;
+
+    &:hover {
+      background-color: $color-primary;
+    }
+
+    &:disabled {
+      background-color: $color-light-gray;
+      color: $color-primary;
+    }
+  }
+  &-outline-secondary{
+    &:hover {
+      background-color: $color-dark;
+    }
   }
 
   &-icon {
+    background-color: #000;
+    opacity: 0.1;
     width: 48px;
     height: 48px;
     color: $color-primary;
