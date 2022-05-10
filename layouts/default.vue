@@ -1,13 +1,14 @@
 <template>
-  <Nuxt />
+  <div>
+    <div>Demo</div>
+    <Nuxt />
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'DefaultLayout'
+  name: 'DefaultLayout',
 }
 </script>
-
 <style scoped>
-
 </style>

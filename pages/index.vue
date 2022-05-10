@@ -3,6 +3,7 @@
     <NavBar/>
     <HeaderHero/>
     <AboutMeComponent/>
+    <CallToAction/>
   </div>
 </template>
 
