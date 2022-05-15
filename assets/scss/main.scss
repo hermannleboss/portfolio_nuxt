@@ -5,5 +5,14 @@ $color-light: #fafafa;
 $color-light-gray: #eaeaeb;
 $color-red: #f43030;
 
-@import "bootstrap/scss/bootstrap";
-@import "bootstrap-vue/src/index.scss";
+
+.custom-container-fluid {
+  padding: 0 32px;
+  width: 100%;
+  @media (min-width: 768px) {
+    padding: 0 39px;
+  }
+  @media (min-width: 1200px) {
+    padding: 0 32px;
+  }
+}

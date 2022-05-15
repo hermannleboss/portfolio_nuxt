@@ -1,5 +1,5 @@
 <template>
-  <div class='c-nav container-fluid row justify-content-between bg-dark text-light footer-height m-0'>
+  <div class='custom-container-fluid row justify-content-between bg-dark text-light footer-height m-0'>
     <div class="row align-items-center m-0">
       <div href="#" class="">
         <svg viewBox="0 0 61 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer-logo">

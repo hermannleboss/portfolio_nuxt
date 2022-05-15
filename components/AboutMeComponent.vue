@@ -1,6 +1,11 @@
 <template>
-  <div class='container-fluid d-flex py-150'>
-    <b-img src='~/static/images/homepage/desktop/image-homepage-profile.jpg' fluid-grow alt='Profile image'/>
+  <div class='custom-container-fluid d-flex py-150'>
+    <img src='~/static/images/homepage/desktop/image-homepage-profile.jpg' alt='Profile image'
+         class='img-full d-none d-xl-block'>
+    <img src='~/static/images/homepage/tablet/image-homepage-profile.jpg' alt='Profile image'
+         class='img-full d-none d-md-block d-xl-none'>
+    <img src='~/static/images/homepage/mobile/image-homepage-profile.jpg' alt='Profile image'
+         class='img-full d-block d-md-none'>
     <div class='about-text px-125 align-items-stretch  d-flex'>
       <div class='border-top border-bottom  align-items-stretch'>
         <h2 class=' pt-5 pb-5'>About Me</h2>
@@ -28,6 +33,10 @@ export default {
 </script>
 
 <style scoped lang='scss'>
+* {
+  border: red solid 1px;
+}
+
 .about-text {
 }
 

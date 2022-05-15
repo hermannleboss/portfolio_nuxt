@@ -1,8 +1,9 @@
 <template>
   <div>
+    <!--
     <HeaderHero/>
     <AboutMeComponent/>
-    <CallToAction/>
+    <CallToAction/>-->
   </div>
 </template>
 
