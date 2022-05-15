@@ -1,6 +1,5 @@
 <template>
   <div>
-    <NavBar/>
     <HeaderHero/>
     <AboutMeComponent/>
     <CallToAction/>

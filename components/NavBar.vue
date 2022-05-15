@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-nav class='c-nav container-fluid justify-content-between'>
+    <b-navbar class='c-nav container-fluid justify-content-between'>
       <b-navbar-brand href="#">
         <svg viewBox="0 0 61 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="nav-logo">
           <path fill-rule="evenodd" clip-rule="evenodd"
@@ -13,7 +13,7 @@
         <b-nav-item>PORTFOLIO</b-nav-item>
         <b-nav-item>CONTACT ME</b-nav-item>
       </b-nav>
-    </b-nav>
+    </b-navbar>
   </div>
 </template>
 
