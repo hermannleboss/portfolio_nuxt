@@ -1,6 +1,6 @@
 <template>
-  <div class='d-flex flex-row container-fluid justify-content-between align-items-center cta'>
-    <h2 class="m-0 cta--heading">Interested in doing a project together?</h2>
+  <div class='d-flex flex-column flex-sm-row custom-container-fluid justify-content-between align-items-center cta'>
+    <h2 class="m-0 cta--heading text-center px-5 px-sm-2 pb-4">Interested in doing a project together?</h2>
     <div class='divider flex-grow-1  w-auto mx-4'></div>
     <ButtonItem variant='outline-secondary'>Contact Me</ButtonItem>
   </div>
@@ -19,10 +19,15 @@ export default {
 
 .cta {
   flex: 1 1 auto;
-  padding-bottom: 150px;
+  padding-bottom: 80px;
+  @media (min-width: 768px) {
+    padding-bottom: 150px;
+  }
 
   &--heading {
-    width: 350px;
+    @media (min-width: 768px) {
+      width: 350px;
+    }
   }
 }
 
