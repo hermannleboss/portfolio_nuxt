@@ -45,8 +45,4 @@ export default {
     }
   }
 }
-
-.img-full {
-  width: 100%;
-}
 </style>

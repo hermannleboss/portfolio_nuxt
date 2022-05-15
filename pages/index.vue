@@ -1,9 +1,8 @@
 <template>
   <div>
     <HomeHero/>
-    <!--
-    <AboutMeComponent/>
-    <CallToAction/>-->
+    <HomeAboutMe/>
+    <CallToAction/>
   </div>
 </template>
 

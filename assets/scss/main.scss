@@ -7,7 +7,7 @@
     padding: 0 39px;
   }
   @media (min-width: 1200px) {
-    padding: 0 32px;
+    padding: 0px 165px;
   }
 }
 
@@ -78,6 +78,12 @@ a{
 
   color: $color-primary;
 }
-.container-fluid{
-  padding: 0px 165px;
+
+.img-full {
+  width: 100%;
+}
+
+/* Solid border */
+hr.solid {
+  border-top: 3px solid #bbb;
 }

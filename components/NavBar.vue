@@ -26,7 +26,8 @@ export default {
 <style scoped lang='scss'>
 
 .c-nav {
-  padding: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   @media (min-width: 768px) {
     padding-top: 64px;
     padding-bottom: 47px;
@@ -34,7 +35,6 @@ export default {
   @media (min-width: 1200px) {
     padding-top: 64px;
     padding-bottom: 54px;
-
   }
 }
 

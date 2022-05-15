@@ -1,14 +1,16 @@
 <template>
-  <div class='custom-container-fluid d-flex py-150'>
-    <img src='~/static/images/homepage/desktop/image-homepage-profile.jpg' alt='Profile image'
-         class='img-full d-none d-xl-block'>
-    <img src='~/static/images/homepage/tablet/image-homepage-profile.jpg' alt='Profile image'
-         class='img-full d-none d-md-block d-xl-none'>
-    <img src='~/static/images/homepage/mobile/image-homepage-profile.jpg' alt='Profile image'
-         class='img-full d-block d-md-none'>
-    <div class='about-text px-125 align-items-stretch  d-flex'>
-      <div class='border-top border-bottom  align-items-stretch'>
-        <h2 class=' pt-5 pb-5'>About Me</h2>
+  <div class='custom-container-fluid about-spacing d-block d-sm-flex m-0'>
+    <div class="d-block">
+      <b-img src='~/static/images/homepage/desktop/image-homepage-profile.jpg' fluid alt='Profile image'
+             class='img-full d-none d-xl-block mx-auto'/>
+      <b-img src='~/static/images/homepage/tablet/image-homepage-profile.jpg' alt='Profile image'
+             class='img-full d-none d-md-block d-xl-none'/>
+      <b-img src='~/static/images/homepage/mobile/image-homepage-profile.jpg' alt='Profile image'
+             class='img-full d-block d-md-none mx-auto'/>
+    </div>
+    <div class='about-text align-items-stretch  d-flex m-0'>
+      <div class='border-top border-bottom  align-items-stretch mt-4'>
+        <h2 class=' pt-4 pb-4 m-0'>About Me</h2>
         <p>I’m a junior front-end developer looking for a new role in an exciting company. I focus on writing
           accessible
           HTML, using modern CSS practices and writing clean JavaScript. When writing JavaScript code, I mostly use
@@ -26,27 +28,19 @@
 
 <script>
 export default {
-  name: 'AboutMeComponent',
+  name: 'HomeAboutMe',
   components: {}
 
 }
 </script>
 
 <style scoped lang='scss'>
-* {
-  border: red solid 1px;
+
+.about {
+  &-spacing {
+    padding-top: 96px;
+    padding-bottom: 115px;
+  }
 }
 
-.about-text {
-}
-
-.py-150 {
-  padding-top: 150px;
-  padding-bottom: 150px;
-}
-
-.px-125 {
-  padding-left: 125px;
-  padding-right: 125px;
-}
 </style>
