@@ -1,6 +1,8 @@
 <template>
-  <div class='custom-container-fluid row justify-content-between bg-dark text-light footer-height m-0'>
-    <div class="row align-items-center m-0">
+  <div
+    class='m-0 footer custom-container-fluid d-flex flex-column flex-sm-row justify-content-between bg-dark text-light
+    footer-height footer-padding'>
+    <div class="d-flex flex-column flex-sm-row  align-items-center m-0">
       <div href="#" class="">
         <svg viewBox="0 0 61 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer-logo">
           <path fill-rule="evenodd" clip-rule="evenodd"
@@ -8,14 +10,13 @@
                 fill="#FFF"/>
         </svg>
       </div>
-      <ul class="m-0 pl-5 footer-link">
+      <ul class="m-0 p-0 py-4 pl-md-5 footer-link text-center">
         <li><a href="#">HOME</a></li>
         <li><a href="#">PORTFOLIO</a></li>
         <li><a href="#">CONTACT ME</a></li>
       </ul>
     </div>
-
-    <div class="row align-items-center footer-icon m-0">
+    <div class="row align-items-center footer-icon m-0 justify-content-center">
       <BIconGithub/>
       <BIconTwitter/>
       <BIconLinkedin/>
@@ -38,16 +39,31 @@ export default Vue.extend({
 <style scoped lang="scss">
 
 .footer {
+  &-padding {
+    @media (max-width: 576px) {
+      padding-top: 56px;
+      padding-bottom: 56px;
+    }
+  }
+
   &-height {
     min-height: 80px;
   }
 
-  &-link {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 42px
+  &-logo {
+    width: 61px;
+    height: 32px;
   }
-  &-icon{
+
+  &-link {
+    @media (min-width: 576px) {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-gap: 42px;
+    }
+  }
+
+  &-icon {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 42px
@@ -67,8 +83,4 @@ ul > li > a {
   color: white;
 }
 
-.footer-logo {
-  width: 61px;
-  height: 32px
-}
 </style>
