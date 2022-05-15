@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-navbar class='c-nav container-fluid justify-content-between'>
+    <b-navbar class='c-nav custom-container-fluid justify-content-between'>
       <b-navbar-brand href="#">
         <svg viewBox="0 0 61 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="nav-logo">
           <path fill-rule="evenodd" clip-rule="evenodd"
@@ -8,7 +8,7 @@
                 fill="#33323D"/>
         </svg>
       </b-navbar-brand>
-      <b-nav>
+      <b-nav class="d-none d-sm-flex">
         <b-nav-item active>HOME</b-nav-item>
         <b-nav-item>PORTFOLIO</b-nav-item>
         <b-nav-item>CONTACT ME</b-nav-item>
@@ -24,16 +24,18 @@ export default {
 </script>
 
 <style scoped lang='scss'>
-$color-primary: #5FB4A2;
-$color-secondary: #203A4C;
-$color-dark: #33323D;
-$color-light: #FAFAFA;
-$color-light-gray: #EAEAEB;
-$color-red: #F43030;
 
 .c-nav {
-  padding-top: 65px;
-  padding-bottom: 65px;
+  padding: 32px;
+  @media (min-width: 768px) {
+    padding-top: 64px;
+    padding-bottom: 47px;
+  }
+  @media (min-width: 1200px) {
+    padding-top: 64px;
+    padding-bottom: 54px;
+
+  }
 }
 
 .nav-logo {
