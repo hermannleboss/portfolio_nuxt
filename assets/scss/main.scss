@@ -1,10 +1,4 @@
-$color-primary: #5fb4a2;
-$color-secondary: #203a4c;
-$color-dark: #33323d;
-$color-light: #fafafa;
-$color-light-gray: #eaeaeb;
-$color-red: #f43030;
-
+@import "utils/variables";
 
 .custom-container-fluid {
   padding: 0 32px;
@@ -15,4 +9,75 @@ $color-red: #f43030;
   @media (min-width: 1200px) {
     padding: 0 32px;
   }
+}
+
+
+body{
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  /* or 188% */
+  color:$color-dark;
+}
+h1{
+  font-family: 'Ibarra Real Nova';
+  font-style: normal;
+
+  font-size: 40px;
+  font-weight: 700;
+
+  line-height: 42px;
+  letter-spacing: -0.357143px;
+
+  color: $color-dark;
+
+  @media (min-width: 768px) {
+
+    font-size: 40px;
+    line-height: 42px;
+    /* or 105% */
+
+    letter-spacing: -0.357143px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 50px;
+    line-height: 50px;
+    /* or 100% */
+    letter-spacing: -0.446429px;
+  }
+}
+
+h2{
+  font-family: 'Ibarra Real Nova';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  /* or 105% */
+
+  letter-spacing: -0.357143px;
+  color: $color-dark;
+}
+
+h3{
+  font-family: 'Ibarra Real Nova';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 36px;
+  /* or 112% */
+  letter-spacing: -0.285714px;
+}
+
+a{
+  color: $color-dark;
+}
+.active{
+
+  color: $color-primary;
+}
+.container-fluid{
+  padding: 0px 165px;
 }

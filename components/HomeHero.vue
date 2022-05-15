@@ -17,20 +17,12 @@
 
 <script>
 export default {
-  name: 'HeaderHero',
+  name: 'HomeHero',
   components: {}
 }
 </script>
 
 <style scoped lang='scss'>
-
-$color-primary: #5FB4A2;
-$color-secondary: #203A4C;
-$color-dark: #33323D;
-$color-light: #FAFAFA;
-$color-light-gray: #EAEAEB;
-$color-red: #F43030;
-$color-white: #FFFFFF;
 
 .hero {
   position: relative;
@@ -40,11 +32,11 @@ $color-white: #FFFFFF;
     bottom: 0;
     left: 0;
     border: white solid 1px;
-    padding-top: 55px;
-    padding-right: 55px;
 
-    @media (min-width: 768px) {
+    @media (min-width: 576px) {
       position: absolute;
+      padding-top: 55px;
+      padding-right: 55px;
       width: 514px;
     }
 
