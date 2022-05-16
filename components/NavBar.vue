@@ -9,8 +9,8 @@
         </svg>
       </b-navbar-brand>
       <b-nav class="d-none d-sm-flex">
-        <b-nav-item active>HOME</b-nav-item>
-        <b-nav-item>PORTFOLIO</b-nav-item>
+        <b-nav-item to="/" active>HOME</b-nav-item>
+        <b-nav-item to="/portfolio-index" >PORTFOLIO</b-nav-item>
         <b-nav-item>CONTACT ME</b-nav-item>
       </b-nav>
     </b-navbar>
