@@ -1,11 +1,11 @@
 <template>
   <div class="custom-container-fluid">
-    <div class="row border-top py-5">
-      <div class="col">
+    <div class="row row-cols-1 row-cols-sm-2 border-top p-0 m-0 ">
+      <div class="col p-0 py-3">
         <h2>Get in touch</h2>
       </div>
-      <div class="col">
-        <p>I’d love to hear about what you’re working on and how I could help. I’m currently looking for a new role and
+      <div class="col p-0 pb-3">
+        <p class="m-0 pb-2">I’d love to hear about what you’re working on and how I could help. I’m currently looking for a new role and
           am open to a wide range of opportunities. My preference would be to find a position in a company in London.
           But I’m also happy to hear about opportunites that don’t fit that description. I’m a hard-working and positive
           person who will always approach each task with a sense of purpose and attention to detail. Please do feel free
@@ -19,22 +19,20 @@
       </div>
     </div>
 
-    <div class="row border-top py-5">
-      <div class="col">
+    <div class="row row-cols-1 row-cols-sm-2 border-top p-0 m-0 pb-5">
+      <div class="col p-0 py-3">
         <h2>Contact Me</h2>
       </div>
-      <div class="col">
+      <div class="col p-0">
         <b-form>
           <b-form-group>
             <label for="name">Name</label>
             <b-form-input placeholder="Jane Appleseed"/>
           </b-form-group>
-
           <b-form-group>
             <label for="Email">Email</label>
             <b-form-input placeholder="email@example.com"/>
           </b-form-group>
-
           <b-form-group>
             <label for="name">Message</label>
             <b-form-textarea placeholder="How can I help ?"/>
