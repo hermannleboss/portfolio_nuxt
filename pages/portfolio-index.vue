@@ -6,9 +6,6 @@
 ">
     <HomeAboutMe/>
     <PresentationCard
-      img-url-desktop="../static/images/portfolio/desktop/image-portfolio-manage.jpg"
-      img-url-tablet="image-portfolio-manage"
-      img-url-mobile="image-portfolio-manage"
       title="Manage"
     />
     <PresentationCard reverse
