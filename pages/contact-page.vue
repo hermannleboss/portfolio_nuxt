@@ -59,9 +59,24 @@ export default Vue.extend({
 </script>
 
 <style scoped>
-.icon{
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-gap: 15px;
+.form-control {
+  border-radius: unset;
+  height: 48px;
+  background-color: rgba(151, 151, 151, 0.30);
+  /*height: calc(1.5em + 0.75rem + 2px);*/
+}
+label{
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 30px;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  color: #33323D;
+}
+textarea.form-control {
+  border-radius: unset;
+  height: 96px;
+  background-color: rgba(151, 151, 151, 0.30);
+  /*height: calc(1.5em + 0.75rem + 2px);*/
 }
 </style>
