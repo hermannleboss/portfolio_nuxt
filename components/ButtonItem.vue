@@ -1,7 +1,7 @@
 <template>
   <b-button squared :variant='variant' class='d-flex align-items-center'>
     <div
-      v-if='variant==="primary"'
+      v-if='icon'
       class='btn-icon d-flex align-items-center justify-content-center'>
       <svg
         width='18'
@@ -29,7 +29,8 @@ export default {
     variant: {
       type:    [String],
       default: 'primary'
-    }
+    },
+    icon: Boolean
   }
 }
 </script>
@@ -38,7 +39,6 @@ export default {
 .btn {
   height: 48px;
   padding: 0;
-
   &-primary {
     background-color: $color-secondary;
     border: none;
@@ -67,7 +67,7 @@ export default {
   }
 
   &-text {
-    padding: 17px;
+    padding: 17px 50px ;
   }
 }
 </style>

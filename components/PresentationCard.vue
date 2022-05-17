@@ -1,8 +1,8 @@
 <template>
   <div class='custom-container-fluid presentation-spacing d-block d-md-flex m-0' :class="{'flex-row-reverse': reverse}" >
-    <img :src="require(`../assets/images/portfolio/desktop/image-portfolio-manage.jpg`)" fluid alt='Profile image'
+
+    <!--<img fluid alt='Profile image'
          class='img-full d-none d-xl-block mx-auto'/>
-    <!--
     <img :src="require(`~/assets/images/portfolio/tablet/${imgUrlTablet}.jpg`)" alt='Profile image'
          class='img-full d-none d-md-block d-xl-none'/>
     <img :src="require(`~/assets/images/portfolio/mobile/${imgUrlMobile}.jpg`)" alt='Profile image'

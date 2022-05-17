@@ -9,7 +9,7 @@
            class='img-full d-block d-md-none'>
       <div class='hero-text'>
         <h1 class='pb-4'>Hey, I’m EHO Hermann and I love building beautiful websites</h1>
-        <ButtonItem/>
+        <ButtonItem icon />
       </div>
     </div>
   </div>

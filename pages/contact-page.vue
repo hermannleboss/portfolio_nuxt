@@ -39,7 +39,7 @@
             <label for="name">Message</label>
             <b-form-textarea placeholder="How can I help ?"/>
           </b-form-group>
-          <ButtonItem variant='primary'>Send Message</ButtonItem>
+          <ButtonItem>Send Message</ButtonItem>
         </b-form>
       </div>
     </div>
