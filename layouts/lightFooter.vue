@@ -2,16 +2,14 @@
   <div>
     <NavBar/>
     <Nuxt />
-    <CallToAction/>
     <MainFooter/>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'DefaultLayout',
+  name: 'lightFooter',
   components: {},
-
 }
 </script>
 <style scoped>

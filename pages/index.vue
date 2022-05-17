@@ -2,7 +2,6 @@
   <div>
     <HomeHero/>
     <HomeAboutMe/>
-    <CallToAction/>
   </div>
 </template>
 

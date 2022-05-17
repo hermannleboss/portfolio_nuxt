@@ -53,6 +53,7 @@ export default Vue.extend({
   components: {
     BIconGithub, BIconTwitter, BIconLinkedin
   },
+  layout: 'lightFooter',
 })
 </script>
 
