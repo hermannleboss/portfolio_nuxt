@@ -1,21 +1,22 @@
 <template>
-  <b-button squared :variant='variant' class='d-flex align-items-center'>
+  <b-button :variant="variant" class="d-flex align-items-center" squared>
     <div
-      v-if='icon'
-      class='btn-icon d-flex align-items-center justify-content-center'>
+      v-if="icon"
+      class="btn-icon d-flex align-items-center justify-content-center"
+    >
       <svg
-        width='18'
-        height='14'
-        viewBox='0 0 18 14'
-        fill='none'
-        xmlns='http://www.w3.org/2000/svg'
+        fill="none"
+        height="14"
+        viewBox="0 0 18 14"
+        width="18"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <path d='M1 9L9 13L17 9' stroke='#FFF' />
-        <path opacity='0.5' d='M1 5L9 9L17 5' stroke='#FFF' />
-        <path opacity='0.25' d='M1 1L9 5L17 1' stroke='#FFF' />
+        <path d="M1 9L9 13L17 9" stroke="#FFF"/>
+        <path d="M1 5L9 9L17 5" opacity="0.5" stroke="#FFF"/>
+        <path d="M1 1L9 5L17 1" opacity="0.25" stroke="#FFF"/>
       </svg>
     </div>
-    <div class='btn-text'>
+    <div class="btn-text">
       <slot>About Me</slot>
     </div>
   </b-button>
@@ -23,22 +24,23 @@
 
 <script>
 export default {
-  name:         'ButtonItem',
+  name: 'ButtonItem',
   inheritAttrs: false,
-  props:        {
+  props: {
     variant: {
-      type:    [String],
-      default: 'primary'
+      type: [String],
+      default: 'primary',
     },
-    icon: Boolean
-  }
+    icon: Boolean,
+  },
 }
 </script>
 
-<style scoped lang='scss'>
+<style lang="scss" scoped>
 .btn {
   height: 48px;
   padding: 0;
+
   &-primary {
     background-color: $color-secondary;
     border: none;
@@ -52,7 +54,8 @@ export default {
       color: $color-primary;
     }
   }
-  &-outline-secondary{
+
+  &-outline-secondary {
     &:hover {
       background-color: $color-dark;
     }
@@ -67,7 +70,7 @@ export default {
   }
 
   &-text {
-    padding: 17px 50px ;
+    padding: 17px 50px;
   }
 }
 </style>

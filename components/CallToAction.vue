@@ -1,18 +1,22 @@
 <template>
-  <div class='d-flex flex-column flex-sm-row custom-container-fluid justify-content-between align-items-center cta'>
-    <h2 class="m-0 cta--heading text-center px-5 px-sm-2 pb-4">Interested in doing a project together?</h2>
-    <div class='divider flex-grow-1  w-auto mx-4'></div>
-    <ButtonItem variant='outline-secondary'>Contact Me</ButtonItem>
+  <div
+    class="d-flex flex-column flex-sm-row custom-container-fluid justify-content-between align-items-center cta"
+  >
+    <h2 class="m-0 cta--heading text-center px-5 px-sm-2 pb-4">
+      Interested in doing a project together?
+    </h2>
+    <div class="divider flex-grow-1 w-auto mx-4"></div>
+    <ButtonItem variant="outline-secondary">Contact Me</ButtonItem>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'CallToAction'
+  name: 'CallToAction',
 }
 </script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 .divider {
   border-top: 3px solid #bbb;
 }
@@ -30,5 +34,4 @@ export default {
     }
   }
 }
-
 </style>

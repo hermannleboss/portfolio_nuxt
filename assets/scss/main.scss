@@ -1,4 +1,4 @@
-@import "utils/variables";
+@import 'utils/variables';
 
 .custom-container-fluid {
   padding: 0 32px;
@@ -11,17 +11,16 @@
   }
 }
 
-
-body{
+body {
   font-family: 'Public Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
   /* or 188% */
-  color:$color-dark;
+  color: $color-dark;
 }
-h1{
+h1 {
   font-family: 'Ibarra Real Nova';
   font-style: normal;
 
@@ -34,7 +33,6 @@ h1{
   color: $color-dark;
 
   @media (min-width: 768px) {
-
     font-size: 40px;
     line-height: 42px;
     /* or 105% */
@@ -49,7 +47,7 @@ h1{
   }
 }
 
-h2{
+h2 {
   font-family: 'Ibarra Real Nova';
   font-style: normal;
   font-weight: 700;
@@ -61,7 +59,7 @@ h2{
   color: $color-dark;
 }
 
-h3{
+h3 {
   font-family: 'Ibarra Real Nova';
   font-style: normal;
   font-weight: 400;
@@ -71,11 +69,10 @@ h3{
   letter-spacing: -0.285714px;
 }
 
-a{
+a {
   color: $color-dark;
 }
-.active{
-
+.active {
   color: $color-primary;
 }
 

@@ -1,9 +1,9 @@
 <template>
   <div>
-    <NavBar/>
+    <NavBar />
     <Nuxt />
-    <CallToAction/>
-    <MainFooter/>
+    <CallToAction />
+    <MainFooter />
   </div>
 </template>
 
@@ -11,8 +11,6 @@
 export default {
   name: 'DefaultLayout',
   components: {},
-
 }
 </script>
-<style scoped>
-</style>
+<style scoped></style>

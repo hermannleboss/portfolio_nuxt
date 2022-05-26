@@ -1,16 +1,15 @@
 <template>
   <div>
-    <NavBar/>
+    <NavBar />
     <Nuxt />
-    <MainFooter/>
+    <MainFooter />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'lightFooter',
+  name: 'LightFooter',
   components: {},
 }
 </script>
-<style scoped>
-</style>
+<style scoped></style>

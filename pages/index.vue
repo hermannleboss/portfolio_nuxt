@@ -1,7 +1,7 @@
 <template>
   <div>
-    <HomeHero/>
-    <HomeAboutMe/>
+    <HomeHero />
+    <HomeAboutMe />
   </div>
 </template>
 
@@ -10,10 +10,7 @@ import Vue from 'vue'
 export default Vue.extend({
   name: 'IndexPage',
   components: {},
-
 })
 </script>
 
-<style lang='scss'>
-
-</style>
+<style lang="scss"></style>
