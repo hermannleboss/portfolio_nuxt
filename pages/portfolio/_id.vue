@@ -48,7 +48,8 @@
         <p>{{ realisation.background }} le data</p>
         <h3 class='py-5'>Statics Preview</h3>
 
-        <div v-if='realisation.images!== undefined && realisation!=undefined && realisation.images.image_preview!== undefined '>
+        <div
+          v-if='realisation.images!== undefined && realisation!=undefined && realisation.images.image_preview!== undefined '>
           <!--
           <img
             alt='image'
@@ -71,6 +72,30 @@
       </div>
 
     </div>
+
+    <div class='custom-container-fluid py-5'>
+
+      <div class='d-flex justify-content-between border-top border-bottom '>
+        <div class='border-right py-3 m-0 flex-grow-1'>
+          <NuxtLink :to='"/portfolio/"+previousRealisation.id'  style='text-decoration: none'>
+            <div v-if='previousRealisation.title!=undefined'>
+              <h3>{{previousRealisation.title}}</h3>
+              <p>Previous Project</p>
+            </div>
+          </NuxtLink>
+        </div>
+        <div class='border-left py-3 m-0 flex-grow-1 text-right' :to='"/portfolio/"+nextRealisation.id'>
+          <NuxtLink :to='"/portfolio/"+nextRealisation.id' style='text-decoration: none'>
+            <div v-if='nextRealisation.title!=undefined'>
+
+              <h3>{{nextRealisation.title}}</h3>
+              <p>Next Project</p>
+            </div>
+
+          </NuxtLink>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -81,7 +106,9 @@ export default {
   name: '_id',
   data() {
     return {
-      realisation: {}
+      realisation: {},
+      nextRealisation: {},
+      previousRealisation: {}
     }
   },
   created() {
@@ -89,6 +116,24 @@ export default {
       .get('http://localhost:3000/realisations/' + this.$route.params.id)
       .then(response => {
         this.realisation = response.data
+        const nexId = this.realisation.id + 1
+        const prevId = this.realisation.id - 1
+        axios
+          .get('http://localhost:3000/realisations/' + nexId)
+          .then(response => {
+            this.nextRealisation = response.data
+          })
+          .catch(error => {
+            console.log('there was an error' + error.message)
+          })
+        axios
+          .get('http://localhost:3000/realisations/' + prevId)
+          .then(response => {
+            this.previousRealisation = response.data
+          })
+          .catch(error => {
+            console.log('there was an error' + error.message)
+          })
       })
       .catch(error => {
         console.log('there was an error' + error.message)
