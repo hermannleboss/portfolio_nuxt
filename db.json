@@ -1,0 +1,96 @@
+{
+  "realisations": [
+    {
+      "id": 1,
+      "title": "Manage",
+      "shortDesc": "\n  This project required me to build a fully responsive landing page to the designs provided. \n  I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, \n  such as the testimonial slider.",
+      "project_background ": "This project was a front-end  challenge from Frontend Mentor. It’s a platform that \n  enables you to practice building websites to a design and project brief. Each challenge \n  includes mobile and desktop designs to show how the website should look at different \n  screen sizes. Creating these projects has helped me refine my workflow and solve \n  real-world coding problems. I’ve learned something new with each project, helping \n  me to improve and adapt my style.",
+      "link": "",
+      "images": {
+        "image-portfolio": "https://via.placeholder.com/1080x1000?text=Placeholder",
+        "image-preview": [
+          "https://via.placeholder.com/1270x800?text=Placeholder",
+          "https://via.placeholder.com/1270x800?text=Placeholder"
+        ],
+        "image-hero": "https://via.placeholder.com/2220x1000?text=Placeholder"
+      },
+      "techno": [
+        "Interaction Design ",
+        "Interaction Design ",
+        "Front End",
+        " DevelopmentHTML",
+        " CSS",
+        " JS"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Bookmark",
+      "shortDesc": "\n  This project required me to build a fully responsive landing page to the designs provided. \n  I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, \n  such as the testimonial slider.",
+      "project_background ": "This project was a front-end  challenge from Frontend Mentor. It’s a platform that \n  enables you to practice building websites to a design and project brief. Each challenge \n  includes mobile and desktop designs to show how the website should look at different \n  screen sizes. Creating these projects has helped me refine my workflow and solve \n  real-world coding problems. I’ve learned something new with each project, helping \n  me to improve and adapt my style.",
+      "link": "",
+      "images": {
+        "image-portfolio": "https://via.placeholder.com/1080x1000?text=Placeholder",
+        "image-preview": [
+          "https://via.placeholder.com/1270x800?text=Placeholder",
+          "https://via.placeholder.com/1270x800?text=Placeholder"
+        ],
+        "image-hero": "https://via.placeholder.com/2220x1000?text=Placeholder"
+      },
+      "techno": [
+        "Interaction Design ",
+        "Interaction Design ",
+        "Front End",
+        " DevelopmentHTML",
+        " CSS",
+        " JS"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Insure",
+      "shortDesc": "\n  This project required me to build a fully responsive landing page to the designs provided. \n  I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, \n  such as the testimonial slider.",
+      "project_background ": "This project was a front-end  challenge from Frontend Mentor. It’s a platform that \n  enables you to practice building websites to a design and project brief. Each challenge \n  includes mobile and desktop designs to show how the website should look at different \n  screen sizes. Creating these projects has helped me refine my workflow and solve \n  real-world coding problems. I’ve learned something new with each project, helping \n  me to improve and adapt my style.",
+      "link": "",
+      "images": {
+        "image-portfolio": "https://via.placeholder.com/1080x1000?text=Placeholder",
+        "image-preview": [
+          "https://via.placeholder.com/1270x800?text=Placeholder",
+          "https://via.placeholder.com/1270x800?text=Placeholder"
+        ],
+        "image-hero": "https://via.placeholder.com/2220x1000?text=Placeholder"
+      },
+      "techno": [
+        "Interaction Design ",
+        "Interaction Design ",
+        "Front End",
+        " DevelopmentHTML",
+        " CSS",
+        " JS"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Fylo",
+      "shortDesc": "\n  This project required me to build a fully responsive landing page to the designs provided. \n  I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, \n  such as the testimonial slider.",
+      "project_background ": "This project was a front-end  challenge from Frontend Mentor. It’s a platform that \n  enables you to practice building websites to a design and project brief. Each challenge \n  includes mobile and desktop designs to show how the website should look at different \n  screen sizes. Creating these projects has helped me refine my workflow and solve \n  real-world coding problems. I’ve learned something new with each project, helping \n  me to improve and adapt my style.",
+      "link": "",
+      "images": {
+        "image-portfolio": "https://via.placeholder.com/1080x1000?text=Placeholder",
+        "image-preview": [
+          "https://via.placeholder.com/1270x800?text=Placeholder",
+          "https://via.placeholder.com/1270x800?text=Placeholder"
+        ],
+        "image-hero": "https://via.placeholder.com/2220x1000?text=Placeholder"
+      },
+      "techno": [
+        "Interaction Design ",
+        "Interaction Design ",
+        "Front End",
+        " DevelopmentHTML",
+        " CSS",
+        " JS"
+      ]
+    }
+  ]
+}
