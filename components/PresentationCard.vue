@@ -7,9 +7,9 @@
     <img fluid alt='Profile image'
          class='img-full d-none d-xl-block mx-auto card-image' :src='realisation.images.image_portfolio' />
     <!--
-    <img :src="require(`~/assets/images/portfolio/tablet/${imgUrlTablet}.jpg`)" alt='Profile image'
+    <img :src="" alt='Profile image'
          class='img-full d-none d-md-block d-xl-none'/>
-    <img :src="require(`~/assets/images/portfolio/mobile/${imgUrlMobile}.jpg`)" alt='Profile image'
+    <img :src="" alt='Profile image'
          class='img-full d-block d-md-none mx-auto'/>-->
 
     <div class='presentation-text align-items-stretch d-flex m-0 px-sm-5'>

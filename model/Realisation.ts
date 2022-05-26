@@ -2,7 +2,7 @@ export interface Realisation {
   id: string
   title: string
   shortDesc: string
-  project_background: string
+  background: string
   link: string
   images: {
     image_portfolio: string
