@@ -75,8 +75,8 @@
 
     <div class='custom-container-fluid py-5'>
 
-      <div class='d-flex justify-content-between border-top border-bottom '>
-        <div class='border-right py-3 m-0 flex-grow-1'>
+      <div class='d-flex justify-content-between border-top border-bottom border-dark '>
+        <div class='border-right border-dark py-3 m-0 flex-grow-1'>
           <NuxtLink :to='"/portfolio/"+previousRealisation.id'  style='text-decoration: none'>
             <div v-if='previousRealisation.title!=undefined'>
               <h3>{{previousRealisation.title}}</h3>
@@ -113,13 +113,13 @@ export default {
   },
   created() {
     axios
-      .get('http://localhost:3000/realisations/' + this.$route.params.id)
+      .get('http://localhost:3001/realisations/' + this.$route.params.id)
       .then(response => {
         this.realisation = response.data
         const nexId = this.realisation.id + 1
         const prevId = this.realisation.id - 1
         axios
-          .get('http://localhost:3000/realisations/' + nexId)
+          .get('http://localhost:3001/realisations/' + nexId)
           .then(response => {
             this.nextRealisation = response.data
           })
@@ -127,7 +127,7 @@ export default {
             console.log('there was an error' + error.message)
           })
         axios
-          .get('http://localhost:3000/realisations/' + prevId)
+          .get('http://localhost:3001/realisations/' + prevId)
           .then(response => {
             this.previousRealisation = response.data
           })
