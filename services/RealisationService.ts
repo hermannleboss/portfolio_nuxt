@@ -1,12 +1,14 @@
 import axios from 'axios'
 
+import { Realisation } from '~/models/Realisation'
+
 const apiClient = axios.create({
   baseURL: 'http://localhos:3000',
   withCredentials: false,
   headers: {
     Accept: 'application/json',
-    'Content-Type': 'application/json'
-  }
+    'Content-Type': 'application/json',
+  },
 })
 
 export default {
@@ -15,5 +17,5 @@ export default {
   },
   getRealisation(id: number) {
     return apiClient.get('/realisations/' + id)
-  }
+  },
 }

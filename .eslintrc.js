@@ -12,7 +12,7 @@ module.exports = {
   parserOptions: {
     parser: '@babel/eslint-parser',
   },
-  plugins: [],
+  plugins: ['@typescript-eslint', 'jest'],
   // add your custom rules here
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
