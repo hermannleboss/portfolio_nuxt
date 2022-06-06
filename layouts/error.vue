@@ -9,6 +9,7 @@
 
 <script>
 export default {
+  name: 'DefaultError',
   props: {
     error: {
       type: Object,

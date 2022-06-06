@@ -11,6 +11,9 @@ module.exports = {
   ],
   parserOptions: {
     parser: '@babel/eslint-parser',
+    ecmaVersion: 12,
+    requireConfigFile: false,
+    sourceType: 'module',
   },
   plugins: ['@typescript-eslint', 'jest'],
   // add your custom rules here

@@ -1,8 +1,9 @@
 <template>
-  <b-button class='d-inline-flex align-items-center' squared
-            :variant='variant'
-            v-bind='$attrs'
-            v-on='$listeners'>
+  <b-button
+    class='d-inline-flex align-items-center' squared
+    :variant='variant'
+    v-bind='$attrs'
+    v-on='$listeners'>
     <div
       v-if='icon'
       class='btn-icon d-flex align-items-center justify-content-center'
@@ -14,9 +15,9 @@
         width='18'
         xmlns='http://www.w3.org/2000/svg'
       >
-        <path d='M1 9L9 13L17 9' stroke='#FFF' />
-        <path d='M1 5L9 9L17 5' opacity='0.5' stroke='#FFF' />
-        <path d='M1 1L9 5L17 1' opacity='0.25' stroke='#FFF' />
+        <path d='M1 9L9 13L17 9' stroke='#FFF'/>
+        <path d='M1 5L9 9L17 5' opacity='0.5' stroke='#FFF'/>
+        <path d='M1 1L9 5L17 1' opacity='0.25' stroke='#FFF'/>
       </svg>
     </div>
     <div class='btn-text'>
@@ -36,7 +37,8 @@ export default {
     },
     icon: Boolean,
     buttonClass: {
-      type: String
+      type: String,
+      default: ""
     }
   }
 }

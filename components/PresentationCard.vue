@@ -4,8 +4,10 @@
 
     class='custom-container-fluid presentation-spacing d-block d-md-flex m-0'
   >
-    <img fluid alt='Profile image'
-         class='img-full d-none d-xl-block mx-auto card-image' :src='realisation.images.image_portfolio' />
+    <img
+      fluid
+      alt='Profile image'
+      class='img-full d-none d-xl-block mx-auto card-image' :src='realisation.images.image_portfolio'/>
     <!--
     <img :src="" alt='Profile image'
          class='img-full d-none d-md-block d-xl-none'/>
@@ -32,10 +34,14 @@ export default Vue.extend({
   components: {},
   props: {
     reverse: Boolean,
-    realisation: Object
+    realisation: {
+      type: Object,
+      default() {
+        return {}
+      }
+    }
   },
-  computed: {
-  }
+  computed: {}
 })
 </script>
 
