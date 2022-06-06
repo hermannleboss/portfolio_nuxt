@@ -1,5 +1,5 @@
 <template>
-  <div style="display: grid; grid-template-columns: auto; grid-gap: 50px">
+  <div class="portfolio">
     <PresentationCard v-for="realisation in realisations" :key="realisation.id" :realisation="realisation"/>
   </div>
 </template>
@@ -27,4 +27,11 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+.portfolio {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 50px;
+  padding-bottom: 150px
+}
+</style>

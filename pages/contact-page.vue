@@ -1,7 +1,7 @@
 <template>
   <div class="custom-container-fluid">
-    <div class="row row-cols-1 row-cols-sm-2 border-top p-0 m-0">
-      <div class="col p-0 py-3">
+    <div class="row row-cols-1 row-cols-sm-2 border-top py-5 m-0">
+      <div class="col p-0">
         <h2>Get in touch</h2>
       </div>
       <div class="col p-0 pb-3">
@@ -24,7 +24,7 @@
       </div>
     </div>
 
-    <div class="row row-cols-1 row-cols-sm-2 border-top p-0 m-0 pb-5">
+    <div class="row row-cols-1 row-cols-sm-2 border-top m-0 py-5">
       <div class="col p-0 py-3">
         <h2>Contact Me</h2>
       </div>

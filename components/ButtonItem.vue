@@ -1,5 +1,5 @@
 <template>
-  <b-button class='d-flex align-items-center' squared
+  <b-button class='d-inline-flex align-items-center' squared
             :variant='variant'
             v-bind='$attrs'
             v-on='$listeners'>

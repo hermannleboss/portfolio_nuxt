@@ -5,10 +5,10 @@
 
       <div class='hero'>
         <img
+          v-if='realisation.images!== undefined && realisation!=undefined'
           alt='image'
           class='img-full d-none d-xl-block'
           :src='realisation.images.image_hero'
-          v-if='realisation.images!== undefined && realisation!=undefined'
         />
         <img
           alt='image'
@@ -58,15 +58,15 @@
           /> -->
         </div>
         <img
+          v-if='realisation.images!=undefined'
           alt='image'
           class='img-full d-none d-xl-block pb-5'
-          v-if='realisation.images!=undefined'
           :src='realisation.images.image_preview[0]'
         />
         <img
+          v-if='realisation.images!=undefined'
           alt='image'
           class='img-full d-none d-xl-block'
-          v-if='realisation.images!=undefined'
           :src='realisation.images.image_preview[1]'
         />
       </div>
@@ -75,8 +75,8 @@
 
     <div class='custom-container-fluid py-5'>
 
-      <div class='d-flex justify-content-between border-top border-bottom border-dark '>
-        <div class='border-right border-dark py-3 m-0 flex-grow-1'>
+      <div class='d-flex justify-content-between border-top border-bottom '>
+        <div class='border-right  py-3 m-0 flex-grow-1'>
           <NuxtLink :to='"/portfolio/"+previousRealisation.id'  style='text-decoration: none'>
             <div v-if='previousRealisation.title!=undefined'>
               <h3>{{previousRealisation.title}}</h3>
@@ -84,7 +84,7 @@
             </div>
           </NuxtLink>
         </div>
-        <div class='border-left py-3 m-0 flex-grow-1 text-right' :to='"/portfolio/"+nextRealisation.id'>
+        <div class='py-3 m-0 flex-grow-1 text-right' :to='"/portfolio/"+nextRealisation.id'>
           <NuxtLink :to='"/portfolio/"+nextRealisation.id' style='text-decoration: none'>
             <div v-if='nextRealisation.title!=undefined'>
 
@@ -103,7 +103,7 @@
 import axios from 'axios'
 
 export default {
-  name: '_id',
+  name: 'PortfolioDetail',
   data() {
     return {
       realisation: {},
