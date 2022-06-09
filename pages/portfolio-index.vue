@@ -1,28 +1,25 @@
 <template>
   <div class="portfolio">
     <PresentationCard v-for="realisation in realisations" :key="realisation.id" :realisation="realisation"/>
+
   </div>
 </template>
-
 <script>
-import axios from 'axios'
-
 export default {
   name: 'PortfolioIndex',
   data() {
     return {
-      realisations: []
+      realisations: [],
     }
   },
   created() {
-    axios
-      .get('http://localhost:3001/realisations')
-      .then(response => {
-        this.realisations = response.data
-      })
-      .catch(error => {
-        console.log('there was an error' + error.message)
-      })
+    this.fetchAchievements()
+  },
+  methods: {
+    async fetchAchievements() {
+      const achievements = await this.$axios.$get('https://localhost/achievements')
+      this.realisations = achievements['hydra:member']
+    }
   }
 }
 </script>

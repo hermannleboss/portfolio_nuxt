@@ -7,7 +7,7 @@
     <img
       fluid
       alt='Profile image'
-      class='img-full d-none d-xl-block mx-auto card-image' :src='realisation.images.image_portfolio'/>
+      class='img-full d-none d-xl-block mx-auto card-image' :src='image'/>
     <!--
     <img :src="" alt='Profile image'
          class='img-full d-none d-md-block d-xl-none'/>
@@ -41,7 +41,21 @@ export default Vue.extend({
       }
     }
   },
-  computed: {}
+  data() {
+    return {
+      image: "",
+    }
+  },
+  created() {
+    this.fetchPicture()
+  },
+  methods: {
+    async fetchPicture() {
+      const url = "https://localhost" + this.realisation.portfolioImage
+      const picture = await this.$axios.$get(url)
+      this.image = "https://localhost" + picture.contentUrl
+    }
+  }
 })
 </script>
 
