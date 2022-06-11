@@ -7,7 +7,7 @@
     <img
       fluid
       alt='Profile image'
-      class='img-full d-none d-xl-block mx-auto card-image' :src='image'/>
+      class='img-full mx-auto card-image' :src='image'/>
     <!--
     <img :src="" alt='Profile image'
          class='img-full d-none d-md-block d-xl-none'/>
@@ -19,7 +19,7 @@
         <h2 class='pt-4 py-sm-5 pb-4 m-0'>{{ realisation.title }}</h2>
         <p>{{ realisation.shortDesc }}
         </p>
-        <ButtonItem variant='outline-secondary' :to='"/portfolio/"+realisation.id'>VIEW PROJECT</ButtonItem>
+        <ButtonItem variant='outline-secondary' :to='"/realisation/"+realisation.id'>VIEW PROJECT</ButtonItem>
         <div class='pt-5'></div>
       </div>
     </div>

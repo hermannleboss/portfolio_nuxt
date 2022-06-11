@@ -38,7 +38,7 @@
           <h1 class='pt-4 py-sm-5 pb-4 m-0'>{{ realisation.title }}</h1>
           <p>{{ realisation.shortDesc }}
           </p>
-          <ButtonItem variant='outline-secondary' :to='"/portfolio/"+realisation.id'>VIEW PROJECT</ButtonItem>
+          <ButtonItem desable variant='outline-secondary' :to='"/portfolio/"+realisation.id'>VIEW PROJECT</ButtonItem>
           <div class='pt-5'></div>
         </div>
       </div>
@@ -77,15 +77,15 @@
 
       <div class='d-flex justify-content-between border-top border-bottom '>
         <div class='border-right  py-3 m-0 flex-grow-1'>
-          <NuxtLink :to='"/portfolio/"+previousRealisation.id'  style='text-decoration: none'>
+          <NuxtLink :to='"/realisation/"+previousRealisation.id'  style='text-decoration: none'>
             <div v-if='previousRealisation.title!=undefined'>
               <h3>{{previousRealisation.title}}</h3>
               <p>Previous Project</p>
             </div>
           </NuxtLink>
         </div>
-        <div class='py-3 m-0 flex-grow-1 text-right' :to='"/portfolio/"+nextRealisation.id'>
-          <NuxtLink :to='"/portfolio/"+nextRealisation.id' style='text-decoration: none'>
+        <div class='py-3 m-0 flex-grow-1 text-right' :to='"/realisation/"+nextRealisation.id'>
+          <NuxtLink :to='"/realisation/"+nextRealisation.id' style='text-decoration: none'>
             <div v-if='nextRealisation.title!=undefined'>
 
               <h3>{{nextRealisation.title}}</h3>

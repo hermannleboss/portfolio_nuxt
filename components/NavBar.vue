@@ -18,7 +18,7 @@
       </b-navbar-brand>
       <b-nav class="d-none d-sm-flex">
         <b-nav-item active to="/">HOME</b-nav-item>
-        <b-nav-item to="/portfolio-index">PORTFOLIO</b-nav-item>
+        <b-nav-item to="/realisation">PORTFOLIO</b-nav-item>
         <b-nav-item to="/contact-page">CONTACT ME</b-nav-item>
       </b-nav>
     </b-navbar>
