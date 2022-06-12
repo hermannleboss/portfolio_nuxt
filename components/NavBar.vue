@@ -17,9 +17,9 @@
         </svg>
       </b-navbar-brand>
       <b-nav class="d-none d-sm-flex">
-        <b-nav-item active to="/">HOME</b-nav-item>
-        <b-nav-item to="/realisation">PORTFOLIO</b-nav-item>
-        <b-nav-item to="/contact-page">CONTACT ME</b-nav-item>
+        <b-nav-item :active="$route.path==='/'" to="/">HOME</b-nav-item>
+        <b-nav-item :active="$route.path.includes('/realisation')" to="/realisation">PORTFOLIO</b-nav-item>
+        <b-nav-item :active="$route.path==='/contact-page'" to="/contact-page">CONTACT ME</b-nav-item>
       </b-nav>
     </b-navbar>
   </div>
@@ -27,8 +27,9 @@
 
 <script>
 export default {
-  name: 'NavBar',
-}
+  name: "NavBar",
+  methods: {}
+};
 </script>
 
 <style lang="scss" scoped>
