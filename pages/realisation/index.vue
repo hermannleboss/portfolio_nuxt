@@ -154,6 +154,7 @@ export default {
       ],
     };
   },
+  /*
   created() {
     this.fetchAchievements();
   },
@@ -164,6 +165,7 @@ export default {
       this.realisations = achievements["hydra:member"];
     }
   }
+  */
 };
 </script>
 
