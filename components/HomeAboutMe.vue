@@ -1,23 +1,26 @@
 <template>
-  <div class="custom-container-fluid about-spacing d-block d-md-flex m-0">
-    <img
-      alt="Profile image"
-      class="img-full d-none d-xl-block mx-auto"
-      fluid
-      src="~/static/images/homepage/desktop/image-homepage-profile.jpg"
-    />
-    <img
-      alt="Profile image"
-      class="img-full d-none d-md-block d-xl-none"
-      src="~/static/images/homepage/tablet/image-homepage-profile.jpg"
-    />
-    <img
-      alt="Profile image"
-      class="img-full d-block d-md-none mx-auto"
-      src="~/static/images/homepage/mobile/image-homepage-profile.jpg"
-    />
+  <div class="custom-container-fluid about about-spacing d-block d-md-flex m-0">
+    <div class="flex-grow-2">
 
-    <div class="about-text align-items-stretch d-flex m-0 px-sm-5">
+      <img
+        alt="Profile image"
+        class="img-full d-none d-xl-block mx-auto"
+        fluid
+        src="~/static/images/homepage/desktop/image-homepage-profile.jpg"
+      />
+      <img
+        alt="Profile image"
+        class="img-full d-none d-md-block d-xl-none"
+        src="~/static/images/homepage/tablet/image-homepage-profile.jpg"
+      />
+      <img
+        alt="Profile image"
+        class="img-full d-block d-md-none mx-auto"
+        src="~/static/images/homepage/mobile/image-homepage-profile.jpg"
+      />
+    </div>
+
+    <div class="about-text align-items-stretch d-flex m-0 px-sm-5 flex-grow-3">
       <div class="border-top border-bottom align-items-stretch mt-4 mt-md-0">
         <h2 class="pt-4 py-sm-5 pb-4 m-0">About Me</h2>
         <p>
@@ -39,16 +42,21 @@
 
 <script>
 export default {
-  name: 'HomeAboutMe',
-  components: {},
-}
+  name: "HomeAboutMe",
+  components: {}
+};
 </script>
 
 <style lang="scss" scoped>
-img{
+img {
   object-fit: contain;
 }
+
 .about {
+  & > * {
+    flex: 1;
+  }
+
   &-spacing {
     padding-top: 96px;
     padding-bottom: 115px;

@@ -22,7 +22,7 @@ body {
 }
 
 h1 {
-  font-family: 'Ibarra Real Nova', serif;
+  font-family:  'Ibarra Real Nova',  serif;
   font-style: normal;
 
   font-size: 40px;
@@ -32,9 +32,6 @@ h1 {
   letter-spacing: -0.357143px;
 
   color: $color-dark;
- &:hover{
-   font-family: Roboto;
- }
   @media (min-width: 768px) {
     font-size: 40px;
     line-height: 42px;

@@ -36,7 +36,7 @@ export default {
   googleFonts: {
     families: {
       Roboto: true,
-      'Josefin+Sans': true,
+      'Ibarra+Real+Nova': true,
     },
     display: 'swap',
     prefetch: true,
