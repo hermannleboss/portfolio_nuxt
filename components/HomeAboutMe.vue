@@ -1,6 +1,6 @@
 <template>
-  <div class="custom-container-fluid about about-spacing d-block d-md-flex m-0">
-    <div class="flex-grow-2">
+  <div class="custom-container-fluid about about-spacing justify-content-between d-block d-md-flex m-0">
+    <div class="about-image">
 
       <img
         alt="Profile image"
@@ -18,9 +18,8 @@
         src="~/static/images/homepage/mobile/image-homepage-profile.jpg"
       />
     </div>
-
-    <div class="about-text align-items-stretch d-flex m-0 px-sm-5 flex-grow-3">
-      <div class="border-top border-bottom align-items-stretch mt-4 mt-md-0">
+    <div class="about-text d-flex m-0 px-sm-5 pr-md-0 justify-content-between align-items-start">
+      <div class="flex-column align-items-start border-top border-bottom mt-4 mt-md-0 d-flex h-100">
         <h2 class="pt-4 py-sm-5 pb-4 m-0">About Me</h2>
         <p>
           I’m a junior front-end developer looking for a new role in an exciting
@@ -32,8 +31,7 @@
           outdoors. I love being out in nature whether that’s going for a walk,
           run or cycling. I’d love you to check out my work.
         </p>
-        <ButtonItem variant="outline-secondary">GO TO PORTFOLIO</ButtonItem>
-        <div class="pt-5"></div>
+        <ButtonItem variant="outline-secondary" class="mb-5">GO TO PORTFOLIO</ButtonItem>
       </div>
     </div>
   </div>
@@ -48,20 +46,38 @@ export default {
 
 <style lang="scss" scoped>
 img {
-  object-fit: contain;
+  @media (min-width: 768px) {
+    height: 600px;
+    object-fit: cover;
+  }
 }
 
 .about {
-  & > * {
-    flex: 1;
+  &-image {
+    @media (min-width: 768px) {
+      height: 600px;
+      flex-grow: 1;
+    }
   }
 
   &-spacing {
     padding-top: 96px;
     padding-bottom: 115px;
+    @media (min-width: 1200px) {
+      //height: 811px; //600 + 96+ 115
+    }
   }
 
   &-text {
+    @media (min-width: 768px) {
+      min-height: 600px;
+      width: 400px;
+    }
+    @media (min-width: 1200px) {
+    }
+    /*
+    flex-grow: 0;
+    flex-shrink: 0;*/
   }
 }
 </style>
