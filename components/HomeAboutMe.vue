@@ -5,7 +5,6 @@
       <img
         alt="Profile image"
         class="img-full d-none d-xl-block mx-auto"
-        fluid
         src="~/static/images/homepage/desktop/image-homepage-profile.jpg"
       />
       <img

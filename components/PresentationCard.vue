@@ -7,11 +7,6 @@
     <img
       alt="Profile image"
       class="img-full mx-auto card-image" :src="realisation.portfolioImage.contentUrl" />
-    <!--
-    <img
-      fluid
-      alt="Profile image"
-      class="img-full mx-auto card-image" :src="getPortfolioImage" />-->
 
     <div class="presentation-text align-items-stretch d-flex m-0 px-sm-5">
       <div class="border-top border-bottom align-items-stretch mt-4 mt-md-0">
