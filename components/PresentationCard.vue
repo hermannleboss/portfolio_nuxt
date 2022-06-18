@@ -5,7 +5,6 @@
     class="custom-container-fluid presentation-spacing d-block d-md-flex m-0"
   >
     <img
-      fluid
       alt="Profile image"
       class="img-full mx-auto card-image" :src="realisation.portfolioImage.contentUrl" />
     <!--
