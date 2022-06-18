@@ -61,8 +61,8 @@ img {
   }
 
   &-spacing {
-    padding-top: 96px;
-    padding-bottom: 115px;
+    padding-top: 150px;
+    padding-bottom: 150px;
     @media (min-width: 1200px) {
       //height: 811px; //600 + 96+ 115
     }
