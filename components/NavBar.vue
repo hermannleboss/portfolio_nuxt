@@ -36,6 +36,14 @@ export default {
 .c-nav {
   padding-top: 32px;
   padding-bottom: 32px;
+  font-family: 'Public Sans', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
   @media (min-width: 768px) {
     padding-top: 64px;
     padding-bottom: 47px;
