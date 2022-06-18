@@ -1,7 +1,7 @@
 <template>
   <div>
     <b-navbar class="c-nav custom-container-fluid justify-content-between">
-      <b-navbar-brand href="#">
+      <b-navbar-brand @click="$router.push('/')">
         <svg
           class="nav-logo"
           fill="none"

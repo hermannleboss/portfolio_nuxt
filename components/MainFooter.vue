@@ -3,7 +3,7 @@
     class="m-0 footer custom-container-fluid d-flex flex-column flex-sm-row justify-content-between bg-dark text-light footer-height footer-padding"
   >
     <div class="d-flex flex-column flex-sm-row align-items-center m-0">
-      <div class="" href="#">
+      <div @click="$router.push('/')">
         <svg
           class="footer-logo"
           fill="none"
