@@ -1,10 +1,10 @@
 <template>
-  <body>
+  <div role="main">
     <NavBar />
     <Nuxt />
     <CallToAction />
     <MainFooter />
-  </body>
+  </div>
 </template>
 
 <script>
