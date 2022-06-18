@@ -19,9 +19,9 @@
         </svg>
       </div>
       <ul class="m-0 p-0 py-4 pl-md-5 footer-link text-center">
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">PORTFOLIO</a></li>
-        <li><a href="#">CONTACT ME</a></li>
+        <li><NuxtLink to="/">HOME</NuxtLink></li>
+        <li><NuxtLink to="/realisation">PORTFOLIO</NuxtLink></li>
+        <li><NuxtLink to="/contact-page">CONTACT ME</NuxtLink></li>
       </ul>
     </div>
     <div class="row align-items-center footer-icon m-0 justify-content-center">
