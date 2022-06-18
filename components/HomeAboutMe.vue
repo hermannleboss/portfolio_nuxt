@@ -18,9 +18,9 @@
         src="~/static/images/homepage/mobile/image-homepage-profile.jpg"
       />
     </div>
-    <div class="about-text d-flex m-0 px-sm-5 pr-md-0 justify-content-between align-items-start">
+    <div class="about-text d-flex m-0 pr-md-0 justify-content-between align-items-start">
       <div class="flex-column align-items-start border-top border-bottom mt-4 mt-md-0 d-flex h-100">
-        <h2 class="pt-4 py-sm-5 pb-4 m-0">About Me</h2>
+        <h2 class="pt-3 py-sm-4 pb-4 m-0">About Me</h2>
         <p>
           I’m a junior front-end developer looking for a new role in an exciting
           company. I focus on writing accessible HTML, using modern CSS
@@ -70,8 +70,11 @@ img {
 
   &-text {
     @media (min-width: 768px) {
+      &>div{
+        width: 400px;
+      }
       min-height: 600px;
-      width: 400px;
+      padding-left: 125px;
     }
     @media (min-width: 1200px) {
     }
