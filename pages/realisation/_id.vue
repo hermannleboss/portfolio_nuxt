@@ -27,7 +27,7 @@
           <h1 class="py-sm-5 pb-lg-4 m-0">{{ realisation.title }}</h1>
           <p>{{ realisation.shortDesc }}
           </p>
-          <ButtonItem desable variant="outline-secondary" :to='"/portfolio/"+realisation.id'>VIEW PROJECT</ButtonItem>
+          <ButtonItem desable variant="outline-secondary" :to='"/realisation/"+realisation.id'>VIEW PROJECT</ButtonItem>
           <div class="pt-5"></div>
         </div>
       </div>

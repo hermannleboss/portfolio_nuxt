@@ -31,7 +31,18 @@ export default {
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
     '@nuxtjs/style-resources',
+    '@nuxtjs/google-fonts',
   ],
+  googleFonts: {
+    families: {
+      Roboto: true,
+      'Josefin+Sans': true,
+    },
+    display: 'swap',
+    prefetch: true,
+    preconnect: true,
+    preload: true
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -45,7 +56,13 @@ export default {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    standalone: true,
+    devtools: true,
+    babel:{
+      compact: true
+    }
+  },
 
   // Runtime lint
   typescript: {

@@ -45,6 +45,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+img{
+  object-fit: contain;
+}
 .about {
   &-spacing {
     padding-top: 96px;

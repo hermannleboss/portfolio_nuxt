@@ -12,7 +12,7 @@
 }
 
 body {
-  font-family: 'Public Sans';
+  font-family: 'Public Sans', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -20,8 +20,9 @@ body {
   /* or 188% */
   color: $color-dark;
 }
+
 h1 {
-  font-family: 'Ibarra Real Nova';
+  font-family: 'Ibarra Real Nova', serif;
   font-style: normal;
 
   font-size: 40px;
@@ -31,7 +32,9 @@ h1 {
   letter-spacing: -0.357143px;
 
   color: $color-dark;
-
+ &:hover{
+   font-family: Roboto;
+ }
   @media (min-width: 768px) {
     font-size: 40px;
     line-height: 42px;
@@ -48,7 +51,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'Ibarra Real Nova';
+  font-family: 'Ibarra Real Nova', serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -60,7 +63,7 @@ h2 {
 }
 
 h3 {
-  font-family: 'Ibarra Real Nova';
+  font-family: 'Ibarra Real Nova', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -72,6 +75,7 @@ h3 {
 a {
   color: $color-dark;
 }
+
 .active {
   color: $color-primary;
 }
@@ -80,9 +84,10 @@ a {
   width: 100%;
 }
 
-.border-3{
+.border-3 {
   border-width: 3px !important;
 }
+
 /* Solid border */
 hr.solid {
   border-top: 3px solid #bbb;
