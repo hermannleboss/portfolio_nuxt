@@ -1,5 +1,5 @@
 <template>
-  <div class="portfolio">
+  <div class="portfolio custom-container-fluid">
     <PresentationCard v-for="realisation in realisationsStatic" :key="realisation.id" :realisation="realisation" />
   </div>
 </template>

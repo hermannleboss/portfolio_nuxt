@@ -1,5 +1,5 @@
 <template>
-  <div class="custom-container-fluid about about-spacing justify-content-between d-block d-md-flex m-0">
+  <div class="custom-container-fluid about about-spacing justify-content-start d-block d-md-flex">
     <div class="about-image">
 
       <img
@@ -18,19 +18,21 @@
         src="~/static/images/homepage/mobile/image-homepage-profile.jpg"
       />
     </div>
-    <div class="about-text d-flex m-0 pr-md-0 justify-content-between align-items-start">
-      <div class="flex-column align-items-start border-top border-bottom mt-4 mt-md-0 d-flex h-100">
-        <h2 class="pt-3 py-sm-4 pb-4 m-0">About Me</h2>
-        <p>
-          I’m a junior front-end developer looking for a new role in an exciting
-          company. I focus on writing accessible HTML, using modern CSS
-          practices and writing clean JavaScript. When writing JavaScript code,
-          I mostly use React, but I can adapt to whatever tools are required.
-          I’m based in London, UK, but I’m happy working remotely and have
-          experience in remote teams. When I’m not coding, you’ll find me
-          outdoors. I love being out in nature whether that’s going for a walk,
-          run or cycling. I’d love you to check out my work.
-        </p>
+    <div class="about-text d-flex m-0 justify-content-between align-items-start">
+      <div class="flex-column align-items-start justify-content-between border-top border-bottom mt-4 mt-md-0 d-flex h-100">
+        <div>
+          <h2 class="pt-3 py-sm-4 pb-4 m-0">About Me</h2>
+          <p>
+            I’m a junior front-end developer looking for a new role in an exciting
+            company. I focus on writing accessible HTML, using modern CSS
+            practices and writing clean JavaScript. When writing JavaScript code,
+            I mostly use React, but I can adapt to whatever tools are required.
+            I’m based in London, UK, but I’m happy working remotely and have
+            experience in remote teams. When I’m not coding, you’ll find me
+            outdoors. I love being out in nature whether that’s going for a walk,
+            run or cycling. I’d love you to check out my work.
+          </p>
+        </div>
         <ButtonItem variant="outline-secondary" class="mb-5">GO TO PORTFOLIO</ButtonItem>
       </div>
     </div>
@@ -55,8 +57,7 @@ img {
 .about {
   &-image {
     @media (min-width: 768px) {
-      height: 600px;
-      flex-grow: 1;
+      height: 100%;
     }
   }
 
@@ -78,9 +79,6 @@ img {
     }
     @media (min-width: 1200px) {
     }
-    /*
-    flex-grow: 0;
-    flex-shrink: 0;*/
   }
 }
 </style>
