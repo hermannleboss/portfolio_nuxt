@@ -5,14 +5,8 @@
     class="custom-container-fluid presentation-spacing d-block d-md-flex m-0"
   >
     <img
-      fluid
       alt="Profile image"
-      class="img-full mx-auto card-image" :src="getPortfolioImage" />
-    <!--
-    <img :src="" alt='Profile image'
-         class='img-full d-none d-md-block d-xl-none'/>
-    <img :src="" alt='Profile image'
-         class='img-full d-block d-md-none mx-auto'/>-->
+      class="img-full mx-auto card-image" :src="realisation.portfolioImage.contentUrl" />
 
     <div class="presentation-text align-items-stretch d-flex m-0 px-sm-5">
       <div class="border-top border-bottom align-items-stretch mt-4 mt-md-0">

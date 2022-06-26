@@ -4,7 +4,7 @@
     :variant='variant'
     v-bind='$attrs'
     v-on='$listeners'>
-    <div
+    <span
       v-if='icon'
       class='btn-icon d-flex align-items-center justify-content-center'
     >
@@ -19,10 +19,10 @@
         <path d='M1 5L9 9L17 5' opacity='0.5' stroke='#FFF'/>
         <path d='M1 1L9 5L17 1' opacity='0.25' stroke='#FFF'/>
       </svg>
-    </div>
-    <div class='btn-text'>
+    </span>
+    <span class='btn-text'>
       <slot>About Me</slot>
-    </div>
+    </span>
   </b-button>
 </template>
 
