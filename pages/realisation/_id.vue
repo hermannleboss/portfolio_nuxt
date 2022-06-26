@@ -13,7 +13,7 @@
     </div>
 
     <div
-      class="custom-container-fluid presentation-spacing d-block d-md-flex m-0"
+      class="custom-container-fluid presentation-spacing d-block d-md-flex"
     >
 
       <!--
@@ -303,5 +303,4 @@ export default {
 </script>
 
 <style scoped>
-
 </style>
