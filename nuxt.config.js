@@ -54,32 +54,30 @@ export default {
     // https://go.nuxtjs.dev/bootstrap
     "@nuxtjs/axios",
     "bootstrap-vue/nuxt",
-    [
-      "@nuxtjs/firebase",
-      {
-        config: {
-          apiKey: process.env.APIKEY,
-          authDomain: process.env.AUTHDOMAIN,
-          projectId:  process.env.PROJECTID,
-          storageBucket:  process.env.STORAGEBUCKET,
-          messagingSenderId:  process.env.MESSAGINGSENDERID,
-          appId:  process.env.APPID,
-          measurementId:  process.env.MESSAGINGSENDERID
-        },
-        services: {
-          auth: true,
-          firestore: true,
-          functions: true,
-          storage: true,
-          database: true,
-          messaging: true,
-          performance: true,
-          analytics: true,
-          remoteConfig: true
-        }
-      }
-    ]
+    "@nuxtjs/firebase"
   ],
+  firebase: {
+    config: {
+      apiKey: process.env.APIKEY,
+      authDomain: process.env.AUTHDOMAIN,
+      projectId: process.env.PROJECTID,
+      storageBucket: process.env.STORAGEBUCKET,
+      messagingSenderId: process.env.MESSAGINGSENDERID,
+      appId: process.env.APPID,
+      measurementId: process.env.MESSAGINGSENDERID
+    },
+    services: {
+      auth: true,
+      firestore: true,
+      functions: true,
+      storage: true,
+      database: true,
+      messaging: true,
+      performance: true,
+      analytics: true,
+      remoteConfig: true
+    }
+  },
   firestore: {
     memoryOnly: false, // default
     chunkName: process.env.NODE_ENV !== "production" ? "firebase-auth" : "[id]", // default

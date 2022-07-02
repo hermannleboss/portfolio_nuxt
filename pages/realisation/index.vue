@@ -5,7 +5,6 @@
 </template>
 <script>
 
-import firebase from 'firebase/app'
 import Manage from "@/static/images/portfolio/desktop/image-portfolio-manage.jpg";
 import ManageHero from "@/static/images/detail/desktop/image-manage-hero.jpg";
 import ManagePreview1 from "@/static/images/detail/desktop/image-manage-preview-1.jpg";
@@ -23,13 +22,13 @@ import InsureHero from "@/static/images/detail/desktop/image-insure-hero.jpg";
 import InsurePreview1 from "@/static/images/detail/desktop/image-insure-preview-1.jpg";
 import InsurePreview2 from "@/static/images/detail/desktop/image-insure-preview-2.jpg";
 
-import 'firebase/firestore'
+import "firebase/firestore";
 
-const db = firebase.initializeApp({ projectId: 'MY PROJECT ID' }).firestore()
 export default {
   name: "PortfolioIndex",
   data() {
     return {
+      ds: "ds",
       realisations: [],
       realisationsStatic: [
         {
@@ -61,7 +60,7 @@ export default {
             "@id": "/media_objects/5",
             "@type": "http://schema.org/MediaObject",
             "contentUrl": ManageHero
-          },
+          }
         },
         {
           "@id": "/achievements/6",
@@ -92,7 +91,7 @@ export default {
             "@id": "/media_objects/5",
             "@type": "http://schema.org/MediaObject",
             "contentUrl": BookmarkHero
-          },
+          }
         },
         {
           "@id": "/achievements/6",
@@ -123,7 +122,7 @@ export default {
             "@id": "/media_objects/5",
             "@type": "http://schema.org/MediaObject",
             "contentUrl": FyloHero
-          },
+          }
         },
         {
           "@id": "/achievements/6",
@@ -154,15 +153,54 @@ export default {
             "@id": "/media_objects/5",
             "@type": "http://schema.org/MediaObject",
             "contentUrl": InsureHero
-          },
+          }
         }
       ],
+      realisate: {
+        "id": 5,
+        "title": "Manage",
+        "description": "This project was a front-end  challenge from Frontend Mentor. It’s a platform that    enables you to practice building websites to a design and project brief. Each challenge    includes mobile and desktop designs to show how the website should look at different    screen sizes. Creating these projects has helped me refine my workflow and solve    real-world coding problems. I’ve learned something new with each project, helping    me to improve and adapt my style.",
+        "shortDesc": "This project required me to build a fully responsive landing page to the designs provided. I    used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such    as the features section.",
+        "link": "hermanneho.com",
+        "portfolioImage": {
+          "contentUrl": ""
+        },
+        "previewImages": [
+          {
+            "contentUrl": ""
+          },
+          {
+            "contentUrl": ""
+          }
+        ],
+        "heroImage": {
+          "contentUrl": ""
+        }
+      }
     };
   },
-  /*
-  created() {
-    this.fetchAchievements();
+  firestore: {
+    realisations: "dss"
   },
+  computed: {},
+  created() {
+    // this.testCreate();
+  },
+  methods: {
+    async testCreate() {
+
+
+      try {
+        const varrialbe = await this.$fire.firestore.collection("realisation").get();
+        console.log("la variable ", varrialbe);
+      } catch (e) {
+        // handleError(e);
+        console.log(e);
+      }
+    }
+  }
+
+  /*
   methods: {
     async fetchAchievements() {
       const achievements = await this.$axios.$get("https://localhost/achievements");
