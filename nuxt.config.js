@@ -4,21 +4,21 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'portfolio-nuxt',
+    title: "portfolio-nuxt",
     htmlAttrs: {
-      lang: 'en',
+      lang: "en"
     },
     meta: [
-      {charset: 'utf-8'},
-      {name: 'viewport', content: 'width=device-width, initial-scale=1'},
-      {hid: 'description', name: 'description', content: ''},
-      {name: 'format-detection', content: 'telephone=no'},
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { hid: "description", name: "description", content: "" },
+      { name: "format-detection", content: "telephone=no" }
     ],
-    link: [{rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}],
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['~/assets/scss/main.scss'],
+  css: ["~/assets/scss/main.scss"],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
@@ -29,16 +29,16 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/typescript
-    '@nuxt/typescript-build',
-    '@nuxtjs/style-resources',
-    '@nuxtjs/google-fonts',
+    "@nuxt/typescript-build",
+    "@nuxtjs/style-resources",
+    "@nuxtjs/google-fonts"
   ],
   googleFonts: {
     families: {
       Roboto: true,
-      'Ibarra+Real+Nova': true,
+      "Ibarra+Real+Nova": true
     },
-    display: 'swap',
+    display: "swap",
     prefetch: true,
     preconnect: true,
     preload: true
@@ -47,19 +47,53 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/bootstrap
-    '@nuxtjs/axios',
-    'bootstrap-vue/nuxt',
+    "@nuxtjs/axios",
+    "bootstrap-vue/nuxt",
+    [
+      "@nuxtjs/firebase",
+      {
+        config: {
+          apiKey: "",
+          authDomain: "",
+          projectId: "",
+          storageBucket: "",
+          messagingSenderId: "",
+          appId: "",
+          measurementId: ""
+        },
+        services: {
+          auth: true,
+          firestore: true,
+          functions: true,
+          storage: true,
+          database: true,
+          messaging: true,
+          performance: true,
+          analytics: true,
+          remoteConfig: true
+        }
+      }
+    ]
   ],
-
+  firestore: {
+    memoryOnly: false, // default
+    chunkName: process.env.NODE_ENV !== "production" ? "firebase-auth" : "[id]", // default
+    enablePersistence: true,
+    emulatorPort: 8080,
+    emulatorHost: "localhost",
+    settings: {
+      // Firestore Settings - currently only works in SPA mode
+    }
+  },
   styleResources: {
-    scss: './assets/scss/main.scss',
+    scss: "./assets/scss/main.scss"
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     standalone: true,
     devtools: true,
-    babel:{
+    babel: {
       compact: true
     }
   },
@@ -68,8 +102,8 @@ export default {
   typescript: {
     typeCheck: {
       eslint: {
-        files: './**/*.{ts,js,vue}'
+        files: "./**/*.{ts,js,vue}"
       }
     }
   }
-}
+};

@@ -5,6 +5,7 @@
 </template>
 <script>
 
+import firebase from 'firebase/app'
 import Manage from "@/static/images/portfolio/desktop/image-portfolio-manage.jpg";
 import ManageHero from "@/static/images/detail/desktop/image-manage-hero.jpg";
 import ManagePreview1 from "@/static/images/detail/desktop/image-manage-preview-1.jpg";
@@ -21,6 +22,10 @@ import Insure from "@/static/images/portfolio/desktop/image-portfolio-insure.jpg
 import InsureHero from "@/static/images/detail/desktop/image-insure-hero.jpg";
 import InsurePreview1 from "@/static/images/detail/desktop/image-insure-preview-1.jpg";
 import InsurePreview2 from "@/static/images/detail/desktop/image-insure-preview-2.jpg";
+
+import 'firebase/firestore'
+
+const db = firebase.initializeApp({ projectId: 'MY PROJECT ID' }).firestore()
 export default {
   name: "PortfolioIndex",
   data() {
