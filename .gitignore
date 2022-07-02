@@ -95,3 +95,5 @@ sw.*
 
 # Local Netlify folder
 .netlify
+
+.env

@@ -31,8 +31,12 @@ export default {
     // https://go.nuxtjs.dev/typescript
     "@nuxt/typescript-build",
     "@nuxtjs/style-resources",
-    "@nuxtjs/google-fonts"
+    "@nuxtjs/google-fonts",
+    "@nuxtjs/dotenv"
   ],
+  dotenv: {
+    /* module options */
+  },
   googleFonts: {
     families: {
       Roboto: true,
