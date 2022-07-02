@@ -1,3 +1,4 @@
+require("dotenv").config();
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: true,
@@ -57,13 +58,13 @@ export default {
       "@nuxtjs/firebase",
       {
         config: {
-          apiKey: "",
-          authDomain: "",
-          projectId: "",
-          storageBucket: "",
-          messagingSenderId: "",
-          appId: "",
-          measurementId: ""
+          apiKey: process.env.APIKEY,
+          authDomain: process.env.AUTHDOMAIN,
+          projectId:  process.env.PROJECTID,
+          storageBucket:  process.env.STORAGEBUCKET,
+          messagingSenderId:  process.env.MESSAGINGSENDERID,
+          appId:  process.env.APPID,
+          measurementId:  process.env.MESSAGINGSENDERID
         },
         services: {
           auth: true,
