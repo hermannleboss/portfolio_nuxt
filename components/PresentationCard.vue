@@ -21,8 +21,10 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
-
+import Vue, { PropType } from "vue";
+export interface PresentationType{
+  image: string
+}
 export default Vue.extend({
   name: "PresentationCard",
   components: {},
@@ -33,6 +35,10 @@ export default Vue.extend({
       default() {
         return {};
       }
+    },
+    presentation:{
+      type: Object as PropType<PresentationType>,
+      required: false
     }
   },
   data() {

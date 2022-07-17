@@ -21,8 +21,14 @@ import Insure from "@/static/images/portfolio/desktop/image-portfolio-insure.jpg
 import InsureHero from "@/static/images/detail/desktop/image-insure-hero.jpg";
 import InsurePreview1 from "@/static/images/detail/desktop/image-insure-preview-1.jpg";
 import InsurePreview2 from "@/static/images/detail/desktop/image-insure-preview-2.jpg";
+
 export default {
   name: "PortfolioIndex",
+  async asyncData({ $axios, $config }) {
+    const realisations = await $axios.$get(`${$config.apiURL}/achievements`);
+    console.log(realisations);
+    return { realisations };
+  },
   data() {
     return {
       realisations: [],
@@ -56,7 +62,7 @@ export default {
             "@id": "/media_objects/5",
             "@type": "http://schema.org/MediaObject",
             "contentUrl": ManageHero
-          },
+          }
         },
         {
           "@id": "/achievements/6",
@@ -87,7 +93,7 @@ export default {
             "@id": "/media_objects/5",
             "@type": "http://schema.org/MediaObject",
             "contentUrl": BookmarkHero
-          },
+          }
         },
         {
           "@id": "/achievements/6",
@@ -118,7 +124,7 @@ export default {
             "@id": "/media_objects/5",
             "@type": "http://schema.org/MediaObject",
             "contentUrl": FyloHero
-          },
+          }
         },
         {
           "@id": "/achievements/6",
@@ -149,23 +155,27 @@ export default {
             "@id": "/media_objects/5",
             "@type": "http://schema.org/MediaObject",
             "contentUrl": InsureHero
-          },
+          }
         }
-      ],
+      ]
     };
   },
-  /*
+
   created() {
-    this.fetchAchievements();
-  },
+    // this.fetchAchievements();
+  }
+  /*
   methods: {
     async fetchAchievements() {
-      const achievements = await this.$axios.$get("https://localhost/achievements");
+      console.log(this.$config);
+      const achievements = await this.$axios.$get(`${this.$config.apiURL}/achievements`);
       console.log("Fetch");
+      console.log("Achievement",achievements);
       this.realisations = achievements["hydra:member"];
     }
-  }
-  */
+  } */
+
+
 };
 </script>
 
