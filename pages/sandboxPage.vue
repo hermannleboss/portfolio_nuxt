@@ -17,7 +17,8 @@
 </template>
 <script>
 
-import "firebase/firestore";
+import { doc, setDoc, getDoc } from 'firebase/firestore'
+import { db } from "~/plugins/firebase.js"
 
 export default {
   name: "SandboxPage",
@@ -26,22 +27,20 @@ export default {
       mountains: [],
       realisations: []
     };
+  }, methods: {
+    async writeToFirestore() {
+      const ref = doc(db, "testCollection", "testDoc")
+      const document = {
+        text: "Firebase 9 rocks!",
+      };
+      try {
+        await setDoc(ref, document)
+        alert("Success!")
+      } catch (e) {
+        alert("Error!")
+        console.error(e)
+      }
+    },
   },
-  firestore: {
-    realisations: "dss"
-  },
-  async fetch() {
-    try {
-      this.realisations = await this.$fire.firestore.collection("realisation").get().then(querySnapshot => {
-        this.mountains = querySnapshot.docs.map(doc => doc.data())
-
-        // do something with documents
-      });
-      // console.log("la variable ", varrialbe);
-    } catch (e) {
-      // handleError(e);
-      console.log(e);
-    }
-  }
 };
 </script>
