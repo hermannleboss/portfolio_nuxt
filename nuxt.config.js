@@ -37,7 +37,7 @@ export default {
   env: {
     API_URL: "https://portfolio-api.hermanneho.com/api/api/public/index.php"
   }, publicRuntimeConfig: {
-    apiURL: "https://portfolio-api.hermanneho.com/api/api/public/index.php"
+    apiURL: "https://localhost"
   },
   googleFonts: {
     families: {
