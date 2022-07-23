@@ -1,21 +1,11 @@
-<template>
+<template id="#about">
   <div class="custom-container-fluid about about-spacing justify-content-start d-block d-md-flex">
     <div class="about-image">
 
       <img
         alt="Profile image"
-        class="img-full d-none d-xl-block mx-auto"
-        src="~/static/images/homepage/desktop/image-homepage-profile.jpg"
-      />
-      <img
-        alt="Profile image"
-        class="img-full d-none d-md-block d-xl-none"
-        src="~/static/images/homepage/tablet/image-homepage-profile.jpg"
-      />
-      <img
-        alt="Profile image"
-        class="img-full d-block d-md-none mx-auto"
-        src="~/static/images/homepage/mobile/image-homepage-profile.jpg"
+        class="img-full mx-auto"
+        src="~/static/images/homepage/desktop/hermann-eho.jpg"
       />
     </div>
     <div class="about-text d-flex m-0 justify-content-between align-items-start">
@@ -23,17 +13,17 @@
         <div>
           <h2 class="pt-3 py-sm-4 pb-4 m-0">About Me</h2>
           <p>
-            I’m a junior front-end developer looking for a new role in an exciting
+            I’m a junior Frontend developer with about 4 year of experience, looking for a new role in an exciting
             company. I focus on writing accessible HTML, using modern CSS
             practices and writing clean JavaScript. When writing JavaScript code,
             I mostly use React, but I can adapt to whatever tools are required.
-            I’m based in London, UK, but I’m happy working remotely and have
+            I have experience in different language and frameworks and all this can be useful.
+            I’m based in Lomé, TOGO, but I’m happy working remotely and have
             experience in remote teams. When I’m not coding, you’ll find me
-            outdoors. I love being out in nature whether that’s going for a walk,
-            run or cycling. I’d love you to check out my work.
+            watching manga. I’d love you to check out my work.
           </p>
         </div>
-        <ButtonItem variant="outline-secondary" class="mb-5">GO TO PORTFOLIO</ButtonItem>
+        <ButtonItem variant="outline-secondary" class="mb-5" to="/realisation">GO TO PORTFOLIO</ButtonItem>
       </div>
     </div>
   </div>

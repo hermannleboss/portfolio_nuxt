@@ -22,15 +22,15 @@
           </svg>
         </div>
         <ul class="m-0 p-0 py-4 pl-md-5 footer-link text-center">
-          <li><NuxtLink to="/">HOME</NuxtLink></li>
+          <li><NuxtLink to="">HOME</NuxtLink></li>
           <li><NuxtLink to="/realisation">PORTFOLIO</NuxtLink></li>
           <li><NuxtLink to="/contact-page">CONTACT ME</NuxtLink></li>
         </ul>
       </div>
       <div class="row align-items-center footer-icon m-0 justify-content-center">
-        <BIconGithub/>
-        <BIconTwitter/>
-        <BIconLinkedin/>
+        <a href="https://github.com/hermannleboss" class="text-white"><BIconGithub/></a>
+        <a href="https://twitter.com/hermanneho" class="text-white"><BIconTwitter/></a>
+        <a href="https://www.linkedin.com/in/hermann-eho/" class="text-white"><BIconLinkedin/></a>
       </div>
     </div>
   </div>

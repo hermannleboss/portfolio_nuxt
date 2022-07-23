@@ -6,7 +6,7 @@
       Interested in doing a project together?
     </h2>
     <div class="divider flex-grow-1 w-auto mx-4"></div>
-    <ButtonItem variant="outline-secondary">Contact Me</ButtonItem>
+    <ButtonItem variant="outline-secondary" to="/contact-page">Contact Me</ButtonItem>
   </div>
 </template>
 
