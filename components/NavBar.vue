@@ -1,7 +1,7 @@
 <template>
   <div>
     <b-navbar class="c-nav custom-container-fluid justify-content-between">
-      <b-navbar-brand href="#">
+      <b-navbar-brand @click="$router.push('/')">
         <svg
           class="nav-logo"
           fill="none"
@@ -17,9 +17,9 @@
         </svg>
       </b-navbar-brand>
       <b-nav class="d-none d-sm-flex">
-        <b-nav-item active to="/">HOME</b-nav-item>
-        <b-nav-item to="/realisation">PORTFOLIO</b-nav-item>
-        <b-nav-item to="/contact-page">CONTACT ME</b-nav-item>
+        <b-nav-item :active="$route.path==='/'" to="/">HOME</b-nav-item>
+        <b-nav-item :active="$route.path.includes('/realisation')" to="/realisation">PORTFOLIO</b-nav-item>
+        <b-nav-item :active="$route.path==='/contact-page'" to="/contact-page">CONTACT ME</b-nav-item>
       </b-nav>
     </b-navbar>
   </div>
@@ -27,21 +27,30 @@
 
 <script>
 export default {
-  name: 'NavBar',
-}
+  name: "NavBar",
+  methods: {}
+};
 </script>
 
 <style lang="scss" scoped>
 .c-nav {
   padding-top: 32px;
   padding-bottom: 32px;
+  font-family: 'Public Sans', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
   @media (min-width: 768px) {
-    padding-top: 64px;
+    padding-top: 60px;
     padding-bottom: 47px;
   }
   @media (min-width: 1200px) {
-    padding-top: 64px;
-    padding-bottom: 54px;
+    padding-top: 60px;
+    padding-bottom: 50px;
   }
 }
 

@@ -2,11 +2,11 @@
   <div
     class="d-flex flex-column flex-sm-row custom-container-fluid justify-content-between align-items-center cta"
   >
-    <h2 class="m-0 cta--heading text-center px-5 px-sm-2 pb-4">
+    <h2 class="m-0 cta--heading text-center text-md-left px-5 px-sm-2 pb-4">
       Interested in doing a project together?
     </h2>
     <div class="divider flex-grow-1 w-auto mx-4"></div>
-    <ButtonItem variant="outline-secondary">Contact Me</ButtonItem>
+    <ButtonItem variant="outline-secondary" to="/contact-page">Contact Me</ButtonItem>
   </div>
 </template>
 
@@ -30,7 +30,7 @@ export default {
 
   &--heading {
     @media (min-width: 768px) {
-      width: 350px;
+      width: 450px;
     }
   }
 }

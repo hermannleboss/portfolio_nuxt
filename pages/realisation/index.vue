@@ -1,27 +1,39 @@
 <template>
-  <div class="portfolio">
-    <PresentationCard v-for="realisation in realisations" :key="realisation.id" :realisation="realisation" />
+  <div class="portfolio custom-container-fluid">
+    <PresentationCard v-for="(realisation, index) in getRealisations['hydra:member']" :key="realisation.id"
+                      :presentation="extractPresentationType(realisation, index)" />
   </div>
 </template>
-<script>
-export default {
+<script lang="ts">
+import { defaultPresentationType, PresentationType } from "@/models/interfaces";
+import Vue from "vue";
+import * as https from "https";
+import { mapActions, mapGetters, mapMutations, mapState } from "vuex";
+
+export default Vue.extend({
   name: "PortfolioIndex",
-  data() {
-    return {
-      realisations: []
-    };
+  methods: {
+    extractPresentationType(data: any, index: number): PresentationType {
+      console.log(data);
+      let presentation: PresentationType = { ...defaultPresentationType };
+      presentation = {
+        imageUrl: data["portfolioImage"]["fullPath"],
+        title: data.title,
+        shortDesc: data.shortDesc,
+        url: "/realisation/" + index,
+        reverse: index % 2 === 0
+      };
+      return presentation;
+    },
+    ...mapActions(['loadRealisations'])
+  },
+  computed: {
+    ...mapGetters(['getRealisations'])
   },
   created() {
-    this.fetchAchievements();
-  },
-  methods: {
-    async fetchAchievements() {
-      const achievements = await this.$axios.$get("https://localhost/achievements");
-      console.log("Fetch");
-      this.realisations = achievements["hydra:member"];
-    }
+    this.loadRealisations()
   }
-};
+});
 </script>
 
 <style scoped>
