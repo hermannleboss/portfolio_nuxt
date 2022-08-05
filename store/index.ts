@@ -1,8 +1,5 @@
 import https from "https";
-import Vue from "vue";
 import Vuex from "vuex";
-
-Vue.use(Vuex);
 
 const createStore = () => {
   return new Vuex.Store({
@@ -24,16 +21,21 @@ const createStore = () => {
       actions: {
         async loadRealisations({ commit }) {
           // At request level
+          let URL = ""
           let agent = new https.Agent({
             rejectUnauthorized: true
           });
           if (process.env.NODE_ENV !== "production") {
+            URL= URL+process.env.API_URL
             agent = new https.Agent({
               rejectUnauthorized: false
             });
             console.log(process.env.NODE_ENV, `RejectUnauthorized is disabled.`);
+          }else {
+
+            URL= URL+process.env.PROD_API_URL
           }
-          const realisations = await this.$axios.$get(`${process.env.API_URL}/achievements`, { httpsAgent: agent });
+          const realisations = await this.$axios.$get(`${URL}/achievements`, { httpsAgent: agent });
           commit("SET_REALISATION", realisations);
         }
       }

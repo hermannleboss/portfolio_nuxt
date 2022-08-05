@@ -35,8 +35,8 @@ export default {
     "@nuxtjs/dotenv"
   ],
   env: {
-    // API_URL: "https://localhost",
-    API_URL: "https://portfolio-api.hermanneho.com/api/api/public/index.php"
+     API_URL: "https://localhost",
+     PROD_API_URL: "https://portfolio-api.hermanneho.com/api/api/public/index.php"
   }, publicRuntimeConfig: {
     apiURL: "https://localhost"
   },
@@ -71,12 +71,4 @@ export default {
     }
   },
 
-  // Runtime lint
-  typescript: {
-    typeCheck: {
-      eslint: {
-        files: "./**/*.{ts,js,vue}"
-      }
-    }
-  }
 };

@@ -13,7 +13,7 @@
         <h2 class="pt-4 py-sm-5 pb-4 m-0">{{ presentation.title }}</h2>
         <p>{{ presentation.shortDesc }}
         </p>
-        <ButtonItem variant="outline-secondary" :to='presentation.url'>VIEW PROJECT</ButtonItem>
+        <ButtonItem variant="outline-secondary" :to="presentation.url">VIEW PROJECT</ButtonItem>
         <div class="pt-5"></div>
       </div>
     </div>
@@ -34,7 +34,7 @@ export default Vue.extend({
         return {};
       }
     },
-    presentation:{
+    presentation: {
       type: Object as PropType<PresentationType>,
       required: true
     }
@@ -44,7 +44,7 @@ export default Vue.extend({
       image: ""
     };
   },
-  computed:{
+  computed: {
     getPortfolioImage() {
       let path = "https://via.placeholder.com/540x500?text=540x500";
       if (this.realisation !== undefined && this.realisation.portfolioImage !== null && this.realisation.portfolioImage !== undefined && this.realisation.portfolioImage.contentUrl !== undefined) {
@@ -61,7 +61,7 @@ export default Vue.extend({
       const url = "https://localhost" + this.realisation.portfolioImage;
       const picture = await this.$axios.$get(url);
       this.image = "https://localhost" + picture.contentUrl;
-    },
+    }
   }
 });
 </script>

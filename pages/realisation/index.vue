@@ -7,8 +7,7 @@
 <script lang="ts">
 import { defaultPresentationType, PresentationType } from "@/models/interfaces";
 import Vue from "vue";
-import * as https from "https";
-import { mapActions, mapGetters, mapMutations, mapState } from "vuex";
+import { mapActions, mapGetters } from "vuex";
 
 export default Vue.extend({
   name: "PortfolioIndex",
@@ -25,13 +24,13 @@ export default Vue.extend({
       };
       return presentation;
     },
-    ...mapActions(['loadRealisations'])
+    ...mapActions(["loadRealisations"])
   },
   computed: {
-    ...mapGetters(['getRealisations'])
+    ...mapGetters(["getRealisations"])
   },
   created() {
-    this.loadRealisations()
+    this.loadRealisations();
   }
 });
 </script>
@@ -41,6 +40,6 @@ export default Vue.extend({
   display: grid;
   grid-template-columns: auto;
   grid-gap: 50px;
-  padding-bottom: 150px
+  padding-bottom: 150px;
 }
 </style>

@@ -94,13 +94,6 @@ export default Vue.extend({
     getPreviousRealisationById() {
       return this.getRealisations["hydra:member"] !== undefined ? this.getRealisations["hydra:member"][parseInt(this.$route.params.id)-1] : {};
     },
-    // getPortfolioImage() {
-    //   let path = "https://via.placeholder.com/540x500?text=540x500";
-    //   if (this.realisation !== undefined && this.realisation.portfolioImage !== null && this.realisation.portfolioImage !== undefined && this.realisation.portfolioImage.contentUrl !== undefined) {
-    //     path = "https://localhost" + this.realisation.portfolioImage.contentUrl;
-    //   }
-    //   return path;
-    // },
     getHeroImage() {
       let path = "https://via.placeholder.com/1110x500?text=1110x500";
       if (this.getRealisationById !== undefined && this.getRealisationById.heroImage !== null && this.getRealisationById.heroImage !== undefined && this.getRealisationById.heroImage.fullPath !== undefined) {
@@ -120,9 +113,6 @@ export default Vue.extend({
       return path;
     }
   },
-  methods: {
-    ...mapActions(["loadRealisations"])
-  },
   created() {
     this.loadRealisations().then(
       value => {
@@ -130,10 +120,9 @@ export default Vue.extend({
         console.log("finish waiting");
       }
     );
-    // console.log(this.getRealisationById);
-    // this.realisation = this.realisationsStatic.find((realisation) => parseInt(realisation.id) === parseInt(this.$route.params.id));
-    // this.nextRealisation = this.realisationsStatic.find((realisation) => parseInt(realisation.id) === parseInt(this.$route.params.id) + 1);
-    // this.previousRealisation = this.realisationsStatic.find((realisation) => parseInt(realisation.id) === parseInt(this.$route.params.id) - 1);
+  },
+  methods: {
+    ...mapActions(["loadRealisations"])
   }
 });
 </script>
