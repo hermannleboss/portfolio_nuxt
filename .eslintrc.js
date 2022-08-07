@@ -9,13 +9,9 @@ module.exports = {
     'plugin:nuxt/recommended',
     'prettier',
     'eslint:recommended',
-    '@vue/typescript/recommended',
   ],
   parserOptions: {
-    parser: '@babel/eslint-parser',
-    ecmaVersion: 12,
-    requireConfigFile: false,
-    sourceType: 'module',
+    ecmaVersion: 2020,
   },
   plugins: ['@typescript-eslint', 'jest'],
   // add your custom rules here

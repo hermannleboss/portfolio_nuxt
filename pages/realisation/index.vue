@@ -8,18 +8,24 @@
   </div>
 </template>
 <script lang="ts">
-import { defaultPresentationType, PresentationType } from '@/models/interfaces'
 import { defineComponent } from 'vue'
 import { mapActions, mapGetters } from 'vuex'
+import { defaultPresentationType, PresentationType } from '@/models/interfaces'
 
 export default defineComponent({
   name: 'PortfolioIndex',
+  computed: {
+    ...mapGetters(['getRealisations']),
+  },
+  created() {
+    this.loadRealisations()
+  },
   methods: {
     extractPresentationType(data: any, index: number): PresentationType {
       console.log(data)
       let presentation: PresentationType = { ...defaultPresentationType }
       presentation = {
-        imageUrl: data['portfolioImage']['fullPath'],
+        imageUrl: data.portfolioImage.fullPath,
         title: data.title,
         shortDesc: data.shortDesc,
         url: '/realisation/' + index,
@@ -28,12 +34,6 @@ export default defineComponent({
       return presentation
     },
     ...mapActions(['loadRealisations']),
-  },
-  computed: {
-    ...mapGetters(['getRealisations']),
-  },
-  created() {
-    this.loadRealisations()
   },
 })
 </script>

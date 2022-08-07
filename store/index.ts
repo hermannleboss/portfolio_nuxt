@@ -1,46 +1,46 @@
-import https from 'https'
-import Vuex from 'vuex'
+import https from "https";
+import { Store } from "vuex";
 
 const createStore = () => {
-  return new Vuex.Store({
+  return new Store({
     state() {
       return {
-        realisations: {},
-      }
+        realisations: {}
+      };
     },
     mutations: {
       SET_REALISATION(state, payload) {
-        state.realisations = payload
-      },
+        state.realisations = payload;
+      }
     },
     getters: {
       getRealisations(state) {
-        return state.realisations
-      },
+        return state.realisations;
+      }
     },
     actions: {
       async loadRealisations({ commit }) {
         // At request level
-        let URL = ''
+        let URL = "";
         let agent = new https.Agent({
-          rejectUnauthorized: true,
-        })
-        if (process.env.NODE_ENV !== 'production') {
-          URL = URL + process.env.API_URL
+          rejectUnauthorized: true
+        });
+        if (process.env.NODE_ENV !== "production") {
+          URL = URL + process.env.API_URL;
           agent = new https.Agent({
-            rejectUnauthorized: false,
-          })
-          console.log(process.env.NODE_ENV, `RejectUnauthorized is disabled.`)
+            rejectUnauthorized: false
+          });
+          console.log(process.env.NODE_ENV, `RejectUnauthorized is disabled.`);
         } else {
-          URL = URL + process.env.PROD_API_URL
+          URL = URL + process.env.PROD_API_URL;
         }
         const realisations = await this.$axios.$get(`${URL}/achievements`, {
-          httpsAgent: agent,
-        })
-        commit('SET_REALISATION', realisations)
-      },
-    },
-  })
-}
+          httpsAgent: agent
+        });
+        commit("SET_REALISATION", realisations);
+      }
+    }
+  });
+};
 
-export default createStore
+export default createStore;

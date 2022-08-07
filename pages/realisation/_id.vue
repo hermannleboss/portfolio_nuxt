@@ -70,8 +70,8 @@
 </template>
 
 <script>
-import { mapActions, mapGetters } from 'vuex'
 import Vue from 'vue'
+import { mapActions, mapGetters } from 'vuex'
 
 export default Vue.extend({
   name: 'PortfolioDetail',
