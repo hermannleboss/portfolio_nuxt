@@ -1,26 +1,28 @@
 <template>
   <b-button
-    class='d-inline-flex align-items-center' squared
-    :variant='variant'
-    v-bind='$attrs'
-    v-on='$listeners'>
+    class="d-inline-flex align-items-center"
+    squared
+    :variant="variant"
+    v-bind="$attrs"
+    v-on="$listeners"
+  >
     <span
-      v-if='icon'
-      class='btn-icon d-flex align-items-center justify-content-center'
+      v-if="icon"
+      class="btn-icon d-flex align-items-center justify-content-center"
     >
       <svg
-        fill='none'
-        height='14'
-        viewBox='0 0 18 14'
-        width='18'
-        xmlns='http://www.w3.org/2000/svg'
+        fill="none"
+        height="14"
+        viewBox="0 0 18 14"
+        width="18"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <path d='M1 9L9 13L17 9' stroke='#FFF'/>
-        <path d='M1 5L9 9L17 5' opacity='0.5' stroke='#FFF'/>
-        <path d='M1 1L9 5L17 1' opacity='0.25' stroke='#FFF'/>
+        <path d="M1 9L9 13L17 9" stroke="#FFF" />
+        <path d="M1 5L9 9L17 5" opacity="0.5" stroke="#FFF" />
+        <path d="M1 1L9 5L17 1" opacity="0.25" stroke="#FFF" />
       </svg>
     </span>
-    <span class='btn-text'>
+    <span class="btn-text">
       <slot>About Me</slot>
     </span>
   </b-button>
@@ -33,18 +35,18 @@ export default {
   props: {
     variant: {
       type: [String],
-      default: 'primary'
+      default: 'primary',
     },
     icon: Boolean,
     buttonClass: {
       type: String,
-      default: ""
-    }
-  }
+      default: '',
+    },
+  },
 }
 </script>
 
-<style lang='scss' scoped>
+<style lang="scss" scoped>
 .btn {
   height: 48px;
   padding: 0;

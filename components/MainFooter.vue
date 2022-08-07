@@ -1,10 +1,8 @@
 <template>
-  <div class="bg-dark ">
-
+  <div class="bg-dark">
     <div
-      class="footer custom-container-fluid  d-flex flex-column flex-sm-row justify-content-between text-light footer-height footer-padding"
+      class="footer custom-container-fluid d-flex flex-column flex-sm-row justify-content-between text-light footer-height footer-padding"
     >
-
       <div class="d-flex flex-column flex-sm-row align-items-center m-0">
         <div @click="$router.push('/')">
           <svg
@@ -27,10 +25,18 @@
           <li><NuxtLink to="/contact-page">CONTACT ME</NuxtLink></li>
         </ul>
       </div>
-      <div class="row align-items-center footer-icon m-0 justify-content-center">
-        <a href="https://github.com/hermannleboss" class="text-white"><BIconGithub/></a>
-        <a href="https://twitter.com/hermanneho" class="text-white"><BIconTwitter/></a>
-        <a href="https://www.linkedin.com/in/hermann-eho/" class="text-white"><BIconLinkedin/></a>
+      <div
+        class="row align-items-center footer-icon m-0 justify-content-center"
+      >
+        <a href="https://github.com/hermannleboss" class="text-white"
+          ><BIconGithub
+        /></a>
+        <a href="https://twitter.com/hermanneho" class="text-white"
+          ><BIconTwitter
+        /></a>
+        <a href="https://www.linkedin.com/in/hermann-eho/" class="text-white"
+          ><BIconLinkedin
+        /></a>
       </div>
     </div>
   </div>
@@ -38,7 +44,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import {BIconGithub, BIconLinkedin, BIconTwitter} from 'bootstrap-vue'
+import { BIconGithub, BIconLinkedin, BIconTwitter } from 'bootstrap-vue'
 
 export default Vue.extend({
   name: 'MainFooter',

@@ -1,39 +1,41 @@
 <template>
   <div class="portfolio custom-container-fluid">
-    <PresentationCard v-for="(realisation, index) in getRealisations['hydra:member']" :key="realisation.id"
-                      :presentation="extractPresentationType(realisation, index)" />
+    <PresentationCard
+      v-for="(realisation, index) in getRealisations['hydra:member']"
+      :key="realisation.id"
+      :presentation="extractPresentationType(realisation, index)"
+    />
   </div>
 </template>
 <script lang="ts">
-
-import { defaultPresentationType, PresentationType } from "@/models/interfaces";
-import { defineComponent } from "vue";
-import { mapActions, mapGetters } from "vuex";
+import { defaultPresentationType, PresentationType } from '@/models/interfaces'
+import { defineComponent } from 'vue'
+import { mapActions, mapGetters } from 'vuex'
 
 export default defineComponent({
-  name: "PortfolioIndex",
+  name: 'PortfolioIndex',
   methods: {
     extractPresentationType(data: any, index: number): PresentationType {
-      console.log(data);
-      let presentation: PresentationType = { ...defaultPresentationType };
+      console.log(data)
+      let presentation: PresentationType = { ...defaultPresentationType }
       presentation = {
-        imageUrl: data["portfolioImage"]["fullPath"],
+        imageUrl: data['portfolioImage']['fullPath'],
         title: data.title,
         shortDesc: data.shortDesc,
-        url: "/realisation/" + index,
-        reverse: index % 2 === 0
-      };
-      return presentation;
+        url: '/realisation/' + index,
+        reverse: index % 2 === 0,
+      }
+      return presentation
     },
-    ...mapActions(["loadRealisations"])
+    ...mapActions(['loadRealisations']),
   },
   computed: {
-    ...mapGetters(["getRealisations"])
+    ...mapGetters(['getRealisations']),
   },
   created() {
-    this.loadRealisations();
-  }
-});
+    this.loadRealisations()
+  },
+})
 </script>
 
 <style scoped>
