@@ -1,15 +1,15 @@
 export interface PresentationType {
-  imageUrl: string,
-  reverse: boolean,
-  title: string,
-  shortDesc: string,
+  imageUrl: string
+  reverse: boolean
+  title: string
+  shortDesc: string
   url: string
 }
 
 export const defaultPresentationType: PresentationType = {
-  imageUrl: "",
+  imageUrl: '',
   reverse: false,
-  title: "",
-  shortDesc: "",
-  url: ""
-};
+  title: '',
+  shortDesc: '',
+  url: '',
+}

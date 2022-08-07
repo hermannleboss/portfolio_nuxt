@@ -1,10 +1,10 @@
 <template>
-<did>
-  <div class="title">{{message}}</div>
-  <p v-if="statusCode===404">
-    <nuxt-link to="/">Return To Homepage</nuxt-link>
-  </p>
-</did>
+  <did>
+    <div class="title">{{ message }}</div>
+    <p v-if="statusCode === 404">
+      <nuxt-link to="/">Return To Homepage</nuxt-link>
+    </p>
+  </did>
 </template>
 
 <script>
@@ -13,12 +13,12 @@ export default {
   props: {
     error: {
       type: Object,
-      default: null
-    }
+      default: null,
+    },
   },
   head() {
     return {
-      title: this.message
+      title: this.message,
     }
   },
   computed: {
@@ -27,12 +27,9 @@ export default {
     },
     message() {
       return this.error.message
-    }
-  }
-
+    },
+  },
 }
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

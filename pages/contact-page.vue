@@ -17,9 +17,15 @@
         </p>
 
         <div>
-          <a href="https://github.com/hermannleboss"><BIconGithub  class="mr-4"/></a>
-          <a href="https://twitter.com/hermanneho" ><BIconTwitter  class="mr-4" /></a>
-          <a href="https://www.linkedin.com/in/hermann-eho/" ><BIconLinkedin/></a>
+          <a href="https://github.com/hermannleboss"
+            ><BIconGithub class="mr-4"
+          /></a>
+          <a href="https://twitter.com/hermanneho"
+            ><BIconTwitter class="mr-4"
+          /></a>
+          <a href="https://www.linkedin.com/in/hermann-eho/"
+            ><BIconLinkedin
+          /></a>
         </div>
       </div>
     </div>

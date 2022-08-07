@@ -2,6 +2,8 @@
 
 ## Build Setup
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b7f90a5c-9614-441a-9e9b-a49149bd3cf7/deploy-status)](https://app.netlify.com/sites/dreamy-tartufo-044cfc/deploys)
+
 ```bash
 # install dependencies
 $ npm install
