@@ -5,11 +5,12 @@
   </div>
 </template>
 <script lang="ts">
+
 import { defaultPresentationType, PresentationType } from "@/models/interfaces";
-import Vue from "vue";
+import { defineComponent } from "vue";
 import { mapActions, mapGetters } from "vuex";
 
-export default Vue.extend({
+export default defineComponent({
   name: "PortfolioIndex",
   methods: {
     extractPresentationType(data: any, index: number): PresentationType {

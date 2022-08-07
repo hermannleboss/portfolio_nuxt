@@ -21,10 +21,9 @@
 </template>
 
 <script lang="ts">
-import Vue, { PropType } from "vue";
-import { PresentationType } from "~/models/interfaces";
+import { defineComponent } from "vue";
 
-export default Vue.extend({
+export default defineComponent({
   name: "PresentationCard",
   components: {},
   props: {
@@ -35,7 +34,7 @@ export default Vue.extend({
       }
     },
     presentation: {
-      type: Object as PropType<PresentationType>,
+      type: Object,
       required: true
     }
   },

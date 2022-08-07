@@ -71,4 +71,12 @@ export default {
     }
   },
 
+  // Runtime lint
+  typescript: {
+    typeCheck: {
+      eslint: {
+        files: "./**/*.{ts,js,vue}"
+      }
+    }
+  }
 };
