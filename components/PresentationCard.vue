@@ -29,44 +29,9 @@ export default defineComponent({
   name: 'PresentationCard',
   components: {},
   props: {
-    realisation: {
-      type: Object,
-      default() {
-        return {}
-      },
-    },
     presentation: {
       type: Object,
       required: true,
-    },
-  },
-  data() {
-    return {
-      image: '',
-    }
-  },
-  computed: {
-    getPortfolioImage() {
-      let path = 'https://via.placeholder.com/540x500?text=540x500'
-      if (
-        this.realisation !== undefined &&
-        this.realisation.portfolioImage !== null &&
-        this.realisation.portfolioImage !== undefined &&
-        this.realisation.portfolioImage.contentUrl !== undefined
-      ) {
-        path = 'https://localhost' + this.realisation.portfolioImage.contentUrl
-      }
-      return path
-    },
-  },
-  created() {
-    this.fetchPicture()
-  },
-  methods: {
-    async fetchPicture() {
-      const url = 'https://localhost' + this.realisation.portfolioImage
-      const picture = await this.$axios.$get(url)
-      this.image = 'https://localhost' + picture.contentUrl
     },
   },
 })

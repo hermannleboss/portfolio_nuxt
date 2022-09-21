@@ -35,9 +35,9 @@ export default {
     '@nuxtjs/dotenv',
   ],
   env: {
-    API_URL: 'https://localhost',
-    PROD_API_URL:
-      'https://portfolio-api.hermanneho.com/api/api/public/index.php',
+    API_URL: 'https://api-hr-symfony.herokuapp.com',
+    PROD_API_URL:'https://api-hr-symfony.herokuapp.com'
+      // 'https://portfolio-api.hermanneho.com/api/api/public/index.php',
   },
   publicRuntimeConfig: {
     apiURL: 'https://localhost',

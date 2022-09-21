@@ -3,7 +3,7 @@
     class="d-flex flex-column flex-sm-row custom-container-fluid justify-content-between align-items-center cta"
   >
     <h2 class="m-0 cta--heading text-center text-md-left px-5 px-sm-2 pb-4">
-      Interested in doing a project together?
+      Interested in doing a project with me?
     </h2>
     <div class="divider flex-grow-1 w-auto mx-4"></div>
     <ButtonItem variant="outline-secondary" to="/contact-page"
