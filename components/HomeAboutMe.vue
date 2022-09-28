@@ -17,16 +17,14 @@
       >
         <div>
           <h2 class="pt-3 py-sm-4 pb-4 m-0">About Me</h2>
-          <p>
-            I’m a junior Frontend developer with about 4 year of experience,
+          <p class="text-justify">
+            I’m a Frontend developer with about 4 year of experience,
             looking for a new role in an exciting company. I focus on writing
             accessible HTML, using modern CSS practices and writing clean
             JavaScript. When writing JavaScript code, I mostly use React, but I
             can adapt to whatever tools are required. I have experience in
-            different language and frameworks and all this can be useful. I’m
-            based in Lomé, TOGO, but I’m happy working remotely and have
-            experience in remote teams. When I’m not coding, you’ll find me
-            watching manga. I’d love you to check out my work.
+            different language and frameworks such as react, vue js, symfony, laravel  and all this can be useful. When I’m not coding, you’ll find me
+            watching manga, or on my roof, tending to my plants. I’d love you to check out my work.
           </p>
         </div>
         <ButtonItem variant="outline-secondary" class="mb-5" to="/realisation"
