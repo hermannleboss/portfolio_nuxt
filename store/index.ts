@@ -39,7 +39,41 @@ const createStore = () => {
         });
         commit("SET_REALISATION", realisations);
       }
+      /*
+            async loadUpdate() {
+              // At request level
+              const URL = "https://api-hr-symfony.herokuapp.com/media_objects";
+              let agent = new https.Agent({
+                rejectUnauthorized: true
+              });
+              if (process.env.NODE_ENV !== "production") {
+                agent = new https.Agent({
+                  rejectUnauthorized: false
+                });
+                console.log(process.env.NODE_ENV, `RejectUnauthorized is disabled.`);
+              }
+              const tab = ["ch-2000", "sa", "vileatis", "w3-frame"];
+              const tab2 = ["", "hero", "hero-2", "preview", "preview-2"];
+              let i = 0;
+              for (const item of tab) {
+                for (const sufix of tab2) {
+                  i++;
+                  if (sufix !== "") {
+                    await this.$axios.$put(`${URL}/${i}`, {
+                      httpsAgent: agent,
+                      filePath: `${item}-${sufix}.png`
+                    });
+                  } else {
+                    await this.$axios.$put(`${URL}/${i}`, {
+                      httpsAgent: agent,
+                      filePath: `${item}.png`
+                    });
+                  }
+                }
+              }
+            } */
     }
+
   });
 };
 

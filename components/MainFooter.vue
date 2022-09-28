@@ -20,7 +20,7 @@
           </svg>
         </div>
         <ul class="m-0 p-0 py-4 pl-md-5 footer-link text-center">
-          <li><NuxtLink to="">HOME</NuxtLink></li>
+          <li><NuxtLink to="/">HOME</NuxtLink></li>
           <li><NuxtLink to="/realisation">PORTFOLIO</NuxtLink></li>
           <li><NuxtLink to="/contact-page">CONTACT ME</NuxtLink></li>
         </ul>
