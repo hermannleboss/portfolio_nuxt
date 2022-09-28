@@ -9,7 +9,11 @@
 import Vue from "vue";
 
 export default Vue.extend({
-  name: "IndexPage"
+  name: "IndexPage",
+  transition: {
+    name: 'page',
+    mode: 'out-in'
+  }
 });
 </script>
 
